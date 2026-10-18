@@ -1,0 +1,13 @@
+# 16-slack-live-post — Slack live: a real card posts to #meridian-oncall
+# run: 2026-07-30 05:21 UTC
+# cwd: course/week-16/lab
+# exit: 0   status: PASS
+
+$ python3 slack_integration_demo.py --real
+
+Posting a REAL escalation via bot token (chat.postMessage)…
+  result: {"delivered_via": "slack", "channel": "#disputes-oncall", "ok": true}
+  audit:  {"acting_identity": "oncall_a@meridian.test", "scope": "type_a", "action": "notify_slack", "resource": "slack/#disputes-oncall#dispute/4417", "decision": "allow"}
+  → check the channel: the escalation card (with its Ops Console button) should be there.
+
+

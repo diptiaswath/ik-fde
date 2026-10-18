@@ -1,0 +1,41 @@
+# Slack live integration — 2026-07-30 (workspace ik-test, channel #meridian-oncall / C0BLPUH1ZQV)
+
+$ curl -s -H "Authorization: Bearer $SLACK_BOT_TOKEN" https://slack.com/api/auth.test
+{
+  "ok": true,
+  "team": "ik-test",
+  "user": "meridianescalations",
+  "team_id": "T0BLT66EPD0",
+  "bot_id": "B0BLWT46U9J"
+}
+
+$ python3 slack_integration_demo.py --real   # bot rung: chat.postMessage
+Posting a REAL escalation via bot token (chat.postMessage)…
+  result: {"delivered_via": "slack", "channel": "#disputes-oncall", "ok": true}
+  audit:  {"acting_identity": "oncall_a@meridian.test", "scope": "type_a", "action": "notify_slack", "resource": "slack/#disputes-oncall#dispute/4417", "decision": "allow"}
+  → check the channel: the escalation card (with its Ops Console button) should be there.
+
+
+$ python3 meridian_slack_mcp.py --selftest   # LIVE transport: the same tool over real MCP
+  initialize: ok
+  tools/list: ok
+  tools/call #3: isError=False delivered_via=slack deduped=False
+  tools/call #4: isError=False delivered_via=slack deduped=True
+  tools/call #5 (Type-B → Type-A): isError=True error=access_denied audit_decision=deny
+SELFTEST PASS (transport mode: bot)
+
+### Self-hosted portal variant — MERIDIAN_CONSOLE_URL=http://localhost:3100
+$ python3 slack_integration_demo.py --real   # card links to the LOCAL portal
+Posting a REAL escalation via bot token (chat.postMessage)…
+  result: {"delivered_via": "slack", "channel": "#disputes-oncall", "ok": true}
+  audit:  {"acting_identity": "oncall_a@meridian.test", "scope": "type_a", "action": "notify_slack", "resource": "slack/#disputes-oncall#dispute/4417", "decision": "allow"}
+  → check the channel: the escalation card (with its Ops Console button) should be there.
+
+
+$ python3 meridian_slack_mcp.py --selftest   # MCP, self-hosted console link
+  initialize: ok
+  tools/list: ok
+  tools/call #3: isError=False delivered_via=slack deduped=False
+  tools/call #4: isError=False delivered_via=slack deduped=True
+  tools/call #5 (Type-B → Type-A): isError=True error=access_denied audit_decision=deny
+SELFTEST PASS (transport mode: bot)

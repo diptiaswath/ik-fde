@@ -1,0 +1,60 @@
+╔══════════════════════════════════════════════════════════════════╗
+║ DEMO 2 — End-to-end pipeline + the complete circle               ║
+║ triage → evidence → policy(+guardrails) → WRITE-BACK to the product║
+╚══════════════════════════════════════════════════════════════════╝
+data backend: LIVE Meridian API — https://ik-fde-casestudy-bank.vercel.app/api/v1
+model routing: fast=us.anthropic.claude-haiku-4-5-20251001-v1:0  smart=us.anthropic.claude-sonnet-4-5-20250929-v1:0
+
+⛁ load_dispute(29) [tool] span_165a82ef
+    type=A  reason=11.2  amount=$35.36  sla_breached=False  customer=Karen Peterson (premier)
+    ┌─ Triage ─────────────
+    I'll start by loading dispute 29 to begin the triage process.
+    └──────────────────────
+    ┌─ Triage ─────────────
+    **Dispute 29 - Triage Classification:**
+    
+    This is a **Type A dispute** (unauthorized/fraud) with reason code 11.2, which falls under the 11.x category. Classification confidence is high, and the Regulation E 10-business-day clock is active, with a deadline of June 30, 2026 at 02:56:12 UTC—SLA is currently not breached.
+    
+    Now transferring to the Evidence agent to proceed with investigation and resolution:
+    └──────────────────────
+➜ Triage ➜ Evidence [handoff] span_d09074d5
+    model: us.anthropic.claude-haiku-4-5-20251001-v1:0
+⛁ gather_evidence(29) [tool] span_09a93482
+    3 artifact(s) across 2 system(s): card_network, core_banking
+    ┌─ Evidence ─────────────
+    Now I'll gather evidence across all source systems for dispute 29:
+    └──────────────────────
+    ┌─ Evidence ─────────────
+    **Evidence Summary for Dispute 29:**
+    
+    **Source Systems Touched:** 3 systems confirmed
+    - ✓ Card Network
+    - ✓ Core Banking  
+    - ✓ Artifacts verified (3 artifacts retrieved)
+    
+    **Evidence on File:** Karen Peterson (Premier customer) disputes $35.36 charge from Hillcrest Tech (good merchant risk) as unauthorized. Evidence includes core banking transaction details and merchant responses from the card network, establishing timeline and merchant communication on the disputed transaction.
+    
+    Now handing off to the Policy agent for determination:
+    └──────────────────────
+➜ Evidence ➜ Policy [handoff] span_b6cbae5e
+    model: us.anthropic.claude-sonnet-4-5-20250929-v1:0
+⛁ search_policies("Regulation E provisional credit") [tool] span_103ee875
+    retrieved 20 chunk(s) from the policy KB
+🛡 input_guardrail: quarantine_poisoned [guardrail] span_ea25ffc2
+    0 poisoned in this retrieval — the platform ALSO filters at the API layer (defense in depth)
+    ┌─ Policy ─────────────
+    **Policy Recommendation for Dispute 29:**
+    
+    This is a Type A unauthorized transaction dispute from a premier customer reporting fraud at Hillcrest Tech for $35.36. The Regulation E provisional credit deadline is June 30, 2026, and has not been breached. The customer has reported unauthorized use, which under Regulation E requires provisional credit within 10 business days of receiving notice unless the bank completes its investigation and determines the claim is not valid within that timeframe. Given the low dollar amount, the customer's premier standing, and adherence to timeline requirements, provisional credit should be issued to comply with Regulation E consumer protection obligations.
+    
+    RECOMMENDATION: ISSUE_PROVISIONAL_CREDIT
+    └──────────────────────
+
+🛡 output_guardrail: citation_tripwire [guardrail] span_0d592deb
+    ⛔ BLOCKED: uncited provisional-credit/refund claim → routing to a human instead of auto-resolving
+✍ create_ticket → Meridian  (Idempotency-Key: w15-demo-29-ed7e5e78) [write] span_c6f24fbc
+    ticket_id=9000000017  status=open
+
+    ✓ THE CIRCLE IS CLOSED — the agent's recommendation is now a ticket
+    ✓ see it in the product: https://ik-fde-casestudy-bank.vercel.app/disputes/29  (ticket 9000000017)
+    ✓ scoped key · audit-logged · idempotent — the W16 story starts here

@@ -1,0 +1,229 @@
+AGENTCORE FULL-SURFACE RE-VERIFICATION — verbatim capture, 2026-07-22 (live run)
+Runtime + Memory + Observability on the IK shared account with the AWS Lab STARTED.
+Companion to deploy_agentcore.txt (2026-07-12, the original verified ladder) —
+and to week-16/lab/agentcore_gateway/logs/ (Gateway + Identity, same day).
+Toolkit: bedrock-agentcore-starter-toolkit (pip), direct_code_deploy, ANSI stripped.
+
+$ agentcore configure -e app.py -dt direct_code_deploy -ni -r us-east-1 -n meridian_triage
+Configuring Bedrock AgentCore...
+✓ Using detected requirements file: requirements.txt
+
+🚀 Deployment Configuration
+✓ Using: Direct Code Deploy (python3.11)
+✓ Will auto-create execution role
+✓ Will auto-create S3 bucket
+✓ Using default IAM authorization
+✓ Using default request header configuration
+Configuring BedrockAgentCore agent: meridian_triage
+Will create new memory with mode: STM_ONLY
+Memory configuration: Short-term memory only
+Network mode: PUBLIC
+Setting 'meridian_triage' as default agent
+╭─────────────────────────── Configuration Success ────────────────────────────╮
+│ Agent Details                                                                │
+│ Agent Name: meridian_triage                                                  │
+│ Deployment: direct_code_deploy                                               │
+│ Region: us-east-1                                                            │
+│ Account: 073710022953                                                        │
+│ Runtime: python3.11                                                          │
+│                                                                              │
+│ Configuration                                                                │
+│ Execution Role: Auto-create                                                  │
+│ Network Mode: Public                                                         │
+│ S3 Bucket: Auto-create                                                       │
+│ Authorization: IAM (default)                                                 │
+│                                                                              │
+│                                                                              │
+│ Memory: Short-term memory (30-day retention)                                 │
+│                                                                              │
+│                                                                              │
+│ 📄 Config saved to:                                                          │
+│ /Users/pranjal/work/ik-work-plan-fde-curriculum-202606/course/week-15/demo/d │
+│ eploy/agentcore/.bedrock_agentcore.yaml                                      │
+│                                                                              │
+│ Next Steps:                                                                  │
+│ agentcore deploy                                                             │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+$ agentcore deploy --env MERIDIAN_BASE_URL=... --env MERIDIAN_API_KEY=...
+🚀 Launching Bedrock AgentCore (cloud mode - RECOMMENDED)...
+   • Deploy Python code directly to runtime
+   • No Docker required (DEFAULT behavior)
+   • Production-ready deployment
+
+💡 Deployment options:
+   • agentcore deploy                → Cloud (current)
+   • agentcore deploy --local        → Local development
+
+Launching with direct_code_deploy deployment for agent 'meridian_triage'
+Creating memory resource for agent: meridian_triage
+Creating new STM-only memory...
+⏳ Creating memory resource (this may take 30-180 seconds)...
+Created memory: meridian_triage_mem-Zdubu93Ztu
+Created memory meridian_triage_mem-Zdubu93Ztu, waiting for ACTIVE status...
+Waiting for memory meridian_triage_mem-Zdubu93Ztu to return to ACTIVE state and strategies to reach terminal states...
+[13:45:20]    ⏳ Memory: CREATING (10s elapsed)                  manager.py:1339
+[13:45:31]    ⏳ Memory: CREATING (21s elapsed)                  manager.py:1339
+[13:45:41]    ⏳ Memory: CREATING (32s elapsed)                  manager.py:1339
+[13:45:52]    ⏳ Memory: CREATING (42s elapsed)                  manager.py:1339
+[13:46:03]    ⏳ Memory: CREATING (53s elapsed)                  manager.py:1339
+[13:46:14]    ⏳ Memory: CREATING (64s elapsed)                  manager.py:1339
+[13:46:24]    ⏳ Memory: CREATING (74s elapsed)                  manager.py:1339
+[13:46:35]    ⏳ Memory: CREATING (85s elapsed)                  manager.py:1339
+[13:46:46]    ⏳ Memory: CREATING (96s elapsed)                  manager.py:1339
+[13:46:56]    ⏳ Memory: CREATING (107s elapsed)                 manager.py:1339
+[13:47:07]    ⏳ Memory: CREATING (117s elapsed)                 manager.py:1339
+[13:47:18]    ⏳ Memory: CREATING (128s elapsed)                 manager.py:1339
+[13:47:28]    ⏳ Memory: CREATING (138s elapsed)                 manager.py:1339
+[13:47:39]    ⏳ Memory: ACTIVE (149s elapsed)                   manager.py:1339
+Memory meridian_triage_mem-Zdubu93Ztu is ACTIVE and all strategies are in terminal states (took 149 seconds)
+              ✅ Memory is ACTIVE (took 149s)                    manager.py:1353
+ObservabilityDeliveryManager initialized for region: us-east-1, account: 073710022953
+Created log group: /aws/vendedlogs/bedrock-agentcore/memory/APPLICATION_LOGS/meridian_triage_mem-Zdubu93Ztu
+✅ Logs delivery enabled for memory/meridian_triage_mem-Zdubu93Ztu
+✅ Traces delivery enabled for memory/meridian_triage_mem-Zdubu93Ztu
+Observability enabled for memory/meridian_triage_mem-Zdubu93Ztu - logs: True, traces: True
+✅ Observability enabled for memory meridian_triage_mem-Zdubu93Ztu
+   Log group: 
+/aws/vendedlogs/bedrock-agentcore/memory/APPLICATION_LOGS/meridian_triage_mem-Zd
+ubu93Ztu
+Memory created and active: meridian_triage_mem-Zdubu93Ztu
+Ensuring execution role...
+Getting or creating execution role for agent: meridian_triage
+Using AWS region: us-east-1, account ID: 073710022953
+Role name: AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+Role doesn't exist, creating new execution role: AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+Starting execution role creation process for agent: meridian_triage
+✓ Role creating: AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+Creating IAM role: AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+✓ Role created: arn:aws:iam::073710022953:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+✓ Execution policy attached: BedrockAgentCoreRuntimeExecutionPolicy-meridian_triage
+Role creation complete and ready for use with Bedrock AgentCore
+Execution role available: arn:aws:iam::073710022953:role/AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4
+Using entrypoint: app.py (relative to /Users/pranjal/work/ik-work-plan-fde-curriculum-202606/course/week-15/demo/deploy/agentcore)
+Creating deployment package...
+📦 No cached dependencies found, will build
+Building dependencies (this may take a minute)...
+Building dependencies for Linux ARM64 Runtime (manylinux2014_aarch64)
+Installing dependencies with uv for aarch64-manylinux2014 (cross-compiling for Linux ARM64)...
+✓ Dependencies installed with uv
+Fixed hardcoded shebangs in 4 bin/ script(s)
+Creating dependencies.zip...
+✓ Dependencies cached
+Packaging source code...
+Creating deployment package...
+✓ Deployment package ready: 18.70 MB
+Getting or creating S3 bucket for agent: meridian_triage
+S3 bucket available: s3://bedrock-agentcore-codebuild-sources-073710022953-us-east-1
+Uploading deployment package to S3...
+Uploading to s3://bedrock-agentcore-codebuild-sources-073710022953-us-east-1/meridian_triage/deployment.zip...
+✓ Deployment package uploaded: s3://bedrock-agentcore-codebuild-sources-073710022953-us-east-1/meridian_triage/deployment.zip
+Deploying to Bedrock AgentCore Runtime...
+✅ Agent created/updated: arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-C5o4Ng67AI
+Waiting for agent endpoint to be ready...
+Enabling observability...
+CloudWatch Logs resource policy already configured
+X-Ray trace destination already configured
+X-Ray trace segment destination is ACTIVE
+X-Ray indexing rule already configured
+Transaction Search already fully configured
+ObservabilityDeliveryManager initialized for region: us-east-1, account: 073710022953
+✅ Logs auto-created by AWS for runtime/meridian_triage-C5o4Ng67AI
+✅ Traces delivery enabled for runtime/meridian_triage-C5o4Ng67AI
+Observability enabled for runtime/meridian_triage-C5o4Ng67AI - logs: True, traces: True
+✅ X-Ray traces delivery enabled for agent meridian_triage-C5o4Ng67AI
+🔍 GenAI Observability Dashboard: https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-observability/agent-core
+✅ Deployment completed successfully - Agent: arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-C5o4Ng67AI
+✅ Reusing existing S3 bucket: bedrock-agentcore-codebuild-sources-073710022953-us-east-1
+╭───────────────────────────── Deployment Success ─────────────────────────────╮
+│ Agent Details:                                                               │
+│ Agent Name: meridian_triage                                                  │
+│ Agent ARN:                                                                   │
+│ arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-C5o │
+│ 4Ng67AI                                                                      │
+│ Deployment Type: Direct Code Deploy                                          │
+│                                                                              │
+│ 📦 Code package deployed to Bedrock AgentCore                                │
+│                                                                              │
+│ Next Steps:                                                                  │
+│    agentcore status                                                          │
+│    agentcore invoke '{"prompt": "Hello"}'                                    │
+│                                                                              │
+│ 📋 CloudWatch Logs:                                                          │
+│    /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT        │
+│ --log-stream-name-prefix "2026/07/22/[runtime-logs"                          │
+│    /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT        │
+│ --log-stream-names "otel-rt-logs"                                            │
+│                                                                              │
+│ 🔍 GenAI Observability Dashboard:                                            │
+│    https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-ob │
+│ servability/agent-core                                                       │
+│                                                                              │
+│ ⏱️  Note: Observability data may take up to 10 minutes to appear after first │
+│ launch                                                                       │
+│                                                                              │
+│ 💡 Tail logs with:                                                           │
+│    aws logs tail                                                             │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/22/[runtime-logs" --follow                 │
+│    aws logs tail                                                             │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/22/[runtime-logs" --since 1h               │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+$ agentcore invoke '{"dispute_id": 29}'
+╭────────────────────────────── meridian_triage ───────────────────────────────╮
+│ Session: 37c49e9e-3285-498b-9809-9a21eeb244c3                                │
+│ Request ID: 9858c56d-c280-445b-ad60-ae406265c84d                             │
+│ ARN:                                                                         │
+│ arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-C5o │
+│ 4Ng67AI                                                                      │
+│ Logs: aws logs tail                                                          │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/22/[runtime-logs" --follow                 │
+│       aws logs tail                                                          │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/22/[runtime-logs" --since 1h               │
+│ GenAI Dashboard:                                                             │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obser │
+│ vability/agent-core                                                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Response:
+{"dispute_id": 29, "guardrail_tripped": false, "ticket_id": "9000000021", 
+"recommendation": "Regulation E provisional credit applies to unauthorized 
+electronic fund transfers, and this dispute (Type A, reason code 11.2) appears 
+to involve an authorization or processing issue rather than a clear unauthorized
+transfer. Since no provisional credit has been issued and the reg_e_due_at date 
+is 2026-06-30, the analyst should first review the 3 artifacts on file to 
+determine whether compelling evidence exists to support representment under  and
+. The analyst must also verify compliance with network timelines per  to ensure 
+the representment deadline has not passed. Given the limited information and 
+need to assess evidence quality against policy requirements, escalation is 
+warranted.\n\nRECOMMENDATION: HUMAN_REVIEW", "see_it_live": 
+"https://ik-fde-casestudy-bank.vercel.app/disputes/29"}
+
+$ python3 - <<'EOF'   # Memory: carry dispute context across invocations
+# (snippet from supplementary/agentcore.md §3b, run against today's STM memory)
+create_event → 0000001784708372574#42f250b7
+list_events → 1 event(s); latest text:
+   Dispute 29 (Type A, 11.2): no provisional credit issued; recommended HUMAN_REVIEW; ticket 9000000021.
+
+$ aws logs tail /aws/bedrock-agentcore/runtimes/meridian_triage-C5o4Ng67AI-DEFAULT --since 30m
+2026-07-22T08:18:42.049000+00:00 2026/07/22/[runtime-logs-37c49e9e-3285-498b-9809-9a21eeb244c3]e2dd336d-4d47-4b64-9a49-2f1edea5de82 {"timestamp": "2026-07-22T08:18:42.049Z", "level": "INFO", "message": "Invocation completed successfully (2.962s)", "logger": "bedrock_agentcore.app", "requestId": "fcef1272-18b1-4e9e-abc1-39bb0b373327", "sessionId": "37c49e9e-3285-498b-9809-9a21eeb244c3"}
+
+$ agentcore destroy --force   # leave nothing running you don't own
+│ age/deployment.zip                                                           │
+│   ✓ S3 artifact:                                                             │
+│ s3://bedrock-agentcore-codebuild-sources-073710022953-us-east-1/meridian_tri │
+│ age/source.zip                                                               │
+│   ✓ Memory: meridian_triage_mem-Zdubu93Ztu                                   │
+│   ✓ IAM execution role:                                                      │
+│ AmazonBedrockAgentCoreSDKRuntime-us-east-1-97eed3a1a4                        │
+│   ✓ Agent configuration: meridian_triage                                     │
+│   ✓ Configuration file (no agents remaining)                                 │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Next steps:
+  • Run 'agentcore configure --entrypoint <file>' to set up a new agent
+  • Run 'agentcore deploy' to deploy to Bedrock AgentCore

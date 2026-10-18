@@ -1,0 +1,9 @@
+# 01-db-up — Local Postgres is running
+# run: 2026-07-30 05:21 UTC
+# cwd: platform/db
+# exit: 0   status: PASS
+
+$ docker compose exec -T meridian-db pg_isready -U meridian
+
+/var/run/postgresql:5432 - accepting connections
+

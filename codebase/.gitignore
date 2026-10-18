@@ -1,0 +1,32 @@
+# secrets — never commit
+.env
+.env.local
+.env*.local
+
+# node
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# run artifacts
+# NOTE: platform/db/seed/data/*.csv IS committed on purpose — the bank ships with
+# its data so `make up` works with zero generation step. `make seed` regenerates
+# byte-identical files (fixed seed 4417) if you ever need to.
+labs/**/logs/*.local.txt
+incident_traces.jsonl
+incident_rca_reference.txt
+aws.env
+.bedrock_agentcore/
+.last-url
+.last-token
+
+# OS
+.DS_Store

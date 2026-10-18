@@ -1,0 +1,14 @@
+# 15-slack-mcp-selftest — Slack MCP server: initialize → list → call → dedupe → deny
+# run: 2026-07-30 05:21 UTC
+# cwd: course/week-16/lab
+# exit: 0   status: PASS
+
+$ python3 meridian_slack_mcp.py --selftest
+
+  initialize: ok
+  tools/list: ok
+  tools/call #3: isError=False delivered_via=slack deduped=False
+  tools/call #4: isError=False delivered_via=slack deduped=True
+  tools/call #5 (Type-B → Type-A): isError=True error=access_denied audit_decision=deny
+SELFTEST PASS (transport mode: bot)
+

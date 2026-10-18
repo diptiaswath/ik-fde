@@ -1,0 +1,1 @@
+These .txt files are the verbatim stdout of the demo programs (mode: LIVE Bedrock), ANSI colour stripped. They are the actual output the programs printed when run — not rendered, not edited, not generated. Regenerate with: python3 shots_build.py

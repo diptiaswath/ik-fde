@@ -1,0 +1,13 @@
+╔══════════════════════════════════════════════════════════════════╗
+║ the primitives generalize; the brand names don't matter          ║
+╚══════════════════════════════════════════════════════════════════╝
+    model=us.anthropic.claude-haiku-4-5-20251001-v1:0 (native Bedrock — no bridge layer)
+
+Tool #1: load_dispute
+⛁ load_dispute(29) [tool] span_3b22bf03
+    reason_code=11.2  amount=$35.36  sla_breached=False
+**Dispute #29 Triage Summary:**
+
+**Classification:** Type A (Unauthorized/Fraud) - Reason code 11.2 falls under the 10.x/11.x range, triggering Regulation E protections. **Reg E Clock Status:** The due date for resolution is June 30, 2026, and the SLA has not been breached, meaning we are within the regulatory timeline. **Next Step:** Proceed with fraud investigation and provisional credit analysis per Regulation E requirements; initiate cardholder contact to gather additional transaction details.
+    ✓ same problem, same tool, same instructions — different harness
+    ✓ what you learned in demo 1 transferred at ~zero cost

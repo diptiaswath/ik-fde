@@ -1,0 +1,50 @@
+╔══════════════════════════════════════════════════════════════════╗
+║ DEMO 2 — End-to-end pipeline + the complete circle               ║
+║ triage → evidence → policy(+guardrails) → WRITE-BACK to the product║
+╚══════════════════════════════════════════════════════════════════╝
+data backend: LIVE Meridian API — https://ik-fde-casestudy-bank.vercel.app/api/v1
+model routing: fast=us.anthropic.claude-haiku-4-5-20251001-v1:0  smart=us.anthropic.claude-sonnet-4-5-20250929-v1:0
+
+⛁ load_dispute(29) [tool] span_67149952
+    type=A  reason=11.2  amount=$35.36  sla_breached=False  customer=Karen Peterson (premier)
+    ┌─ Triage ─────────────
+    I'll help you work dispute 29 end to end. Let me start by loading the dispute.
+    └──────────────────────
+    ┌─ Triage ─────────────
+    **TRIAGE CLASSIFICATION - Dispute 29**
+    
+    **Reason Code 11.2** classifies as **Type A** (Unauthorized Transaction/Fraud) with high confidence. Regulation E applies with a due date of June 30, 2026, and no SLA breach; provisional credit has not yet been issued.
+    
+    Now handing off to the Evidence agent to proceed with investigation and documentation requirements.
+    └──────────────────────
+➜ Triage ➜ Evidence [handoff] span_4e49c44a
+    model: us.anthropic.claude-haiku-4-5-20251001-v1:0
+⛁ gather_evidence(29) [tool] span_a4e82b26
+    3 artifact(s) across 2 system(s): card_network, core_banking
+    ┌─ Evidence ─────────────
+    I understand. I am the Evidence agent. Let me now gather evidence for dispute 29.
+    └──────────────────────
+    ┌─ Evidence ─────────────
+    **EVIDENCE GATHERED - Dispute 29**
+    
+    ✓ **Source Systems Verified:** 2 systems touched (card_network, core_banking)
+    - **Artifact 88** (core_banking): Transaction detail documentation
+    - **Artifact 87** (card_network): Merchant response records  
+    - **Artifact 89** (card_network): Merchant response records
+    
+    **SUMMARY ON FILE:** Transaction detail from core banking system shows a $35.36 charge to Hillcrest Tech on Karen Peterson's (premier customer) account. Merchant responses from the card network indicate no authorization dispute from the merchant side with a good risk profile.
+    
+    Now handing off to the Policy agent for determination.
+    └──────────────────────
+➜ Evidence ➜ Policy [handoff] span_aa8a776c
+    model: us.anthropic.claude-sonnet-4-5-20250929-v1:0
+⛁ search_policies("Regulation E provisional credit") [tool] span_cf862a36
+    retrieved 20 chunk(s) from the policy KB
+🛡 input_guardrail: quarantine_poisoned [guardrail] span_5f34bb27
+    0 poisoned in this retrieval — the platform ALSO filters at the API layer (defense in depth)
+    ┌─ Policy ─────────────
+    I am the Policy agent. Let me search for provisional credit policies under Regulation E.
+    └──────────────────────
+
+Give Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new
+LiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.

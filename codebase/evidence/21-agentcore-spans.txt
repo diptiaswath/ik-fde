@@ -1,0 +1,8 @@
+# 21-agentcore-spans — AgentCore traces are queryable in the aws/spans log group
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: None   status: SKIPPED
+
+$ python3 /Users/pranjal/work/ik-work-plan-fde-curriculum-202606/course/tools/check_spans.py
+
+prerequisite absent: the AWS Lab Control Panel to be STARTED (stopped ⇒ explicit IAM deny on bedrock:* / bedrock-agentcore:*). Proof from a started lab: archive/agentcore_session_2026-07-30.txt

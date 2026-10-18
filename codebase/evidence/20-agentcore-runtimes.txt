@@ -1,0 +1,8 @@
+# 20-agentcore-runtimes — AgentCore control plane lists the registered runtime
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: None   status: SKIPPED
+
+$ python3 -c "import boto3;c=boto3.client('bedrock-agentcore-control',region_name='us-east-1');print([(r['agentRuntimeName'],r['status']) for r in c.list_agent_runtimes()['agentRuntimes']])"
+
+prerequisite absent: the AWS Lab Control Panel to be STARTED (stopped ⇒ explicit IAM deny on bedrock:* / bedrock-agentcore:*). Proof from a started lab: archive/agentcore_session_2026-07-30.txt

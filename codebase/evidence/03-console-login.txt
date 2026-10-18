@@ -1,0 +1,8 @@
+# 03-console-login — Console serves the login page (self-hosted)
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: 0   status: PASS
+
+$ curl -s -o /dev/null -w %{http_code} http://localhost:3100/login
+
+200

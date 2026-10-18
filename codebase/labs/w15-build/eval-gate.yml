@@ -1,0 +1,29 @@
+# W15 reference CI eval gate — the teaching copy, annotated.
+# The LIVE one is installed at .github/workflows/eval-gate.yml in this repo and
+# runs on every PR; this file is what the class reads on screen.
+# The merge button is a test: the smoke eval must pass or the PR is blocked.
+name: eval-gate
+on:
+  pull_request:
+    paths: ["codebase/agent/**"]
+jobs:
+  smoke-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run the smoke eval gate (mock brain — no key needed)
+        working-directory: codebase/agent
+        run: |
+          PYTHONPATH=src python3 -m meridian_agent eval \
+            --suite smoke --disputes 1-20 --min-pass 0.9 --mock
+      - name: Install test deps
+        run: python -m pip install --quiet "pytest>=8.0"
+      - name: Unit tests
+        working-directory: codebase/agent
+        run: PYTHONPATH=src python3 -m pytest -q
+# In W17 add a second job that runs:  eval --suite golden --disputes 1-25 --min-pass 0.95
+# including the adversarial cases — that becomes the deploy gate.
+#

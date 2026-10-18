@@ -1,0 +1,41 @@
+╔══════════════════════════════════════════════════════════════════╗
+║ DEMO 1 — Agents SDK primitives on AWS Bedrock                    ║
+║ Agent · tool · handoff · streaming    model=us.anthropic.claude-haiku-4-5-20251001-v1:0║
+╚══════════════════════════════════════════════════════════════════╝
+◆ Triage takes the turn [agent] span_4edfb657
+⛁ load_dispute(29) [tool] span_3d0354c3
+    reason_code=11.2  amount=$35.36  sla_breached=False
+    ┌─ Triage says ─────────────
+    └──────────────────────────────
+    ┌─ Triage says ─────────────
+    **TRIAGE SUMMARY - Dispute #29**
+    
+    **Classification:** Type A (Unauthorized/Fraud)
+    - **Reason Code:** 11.2 (Unauthorized Transaction)
+    - **Regulation E Applies:** Yes
+    
+    **Dispute Details:**
+    - **Amount:** $35.36
+    - **Customer Segment:** Premier
+    - **SLA Status:** Not breached
+    
+    **Regulation E Clock Status:**
+    - **Due Date:** June 30, 2026 at 02:56:12 UTC
+    - **Status:** Within timeline (clock running)
+    
+    ---
+    
+    This is a Type A dispute subject to Regulation E requirements. Proceeding with handoff to Evidence agent for investigation.
+    └──────────────────────────────
+➜ Triage ➜ Evidence [handoff] span_7e6bff91
+    control transferred — the SDK handoff primitive
+◆ Evidence takes the turn [agent] span_d0e93a83
+    ┌─ Evidence says ─────────────
+    ---
+    
+    **EVIDENCE AGENT RESPONSE:**
+    
+    I received Dispute #29, a Type A unauthorized transaction case for $35.36 from a Premier customer with reason code 11.2, subject to Regulation E requirements. To investigate this dispute, I will query the **card_network** system for transaction details and authentication records, the **core_banking** system for account activity and fund movements, and the **crm** system for customer contact history and previous dispute patterns.
+    └──────────────────────────────
+    ✓ final agent: Evidence
+    ✓ every step above = one SDK primitive doing its one job

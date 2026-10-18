@@ -1,0 +1,13 @@
+THE AGENTCORE REGISTRY — live state, 2026-07-22 (what the console's 'Agent runtimes' page shows)
+$ aws bedrock-agentcore-control list-agent-runtimes
+  testing            READY    arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/testing-nAx4ZwAn7G
+  meridian_triage    READY    arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-Vigq5WHGKb
+
+$ aws bedrock-agentcore-control list-agent-runtime-versions --agent-runtime-id meridian_triage-Vigq5WHGKb
+  version 1  READY  updated 2026-07-22 08:58:10.376259+00:00
+
+$ aws bedrock-agentcore-control list-agent-runtime-endpoints --agent-runtime-id meridian_triage-Vigq5WHGKb
+  endpoint DEFAULT  → live version 1  READY
+
+Registered once, invoked by ARN from anywhere in the estate; each deploy = a new immutable version;
+the DEFAULT endpoint pins what callers hit. Traces: CloudWatch → GenAI Observability → Bedrock AgentCore.

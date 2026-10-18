@@ -1,0 +1,10 @@
+# The seed CSVs are data, not text: preserve them byte-for-byte so the
+# deterministic seed (fixed seed 4417) stays reproducible on every machine.
+*.csv -text
+
+# Built artifacts are binary
+*.pptx binary
+*.docx binary
+*.xlsx binary
+*.png binary
+*.jpg binary

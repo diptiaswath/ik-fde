@@ -1,0 +1,108 @@
+# 09-agent-run — Triage pipeline works dispute 29 (mock brain, live DB)
+# run: 2026-07-30 05:21 UTC
+# cwd: platform/agent
+# exit: 0   status: PASS
+
+$ uv run meridian-agent run --dispute 29 --mock
+
+
+╔════════════════════════════════════════════════════════════════╗
+║ MERIDIAN DISPUTE AGENT — whole-game demo                       ║
+║ dispute=29  brain=mock (deterministic rule-based stand-ins)    ║
+╚════════════════════════════════════════════════════════════════╝
+trace_id=trace_e82366f0d65c40d1
+data backend: fixture  ·  fixture (psycopg not installed)
+
+⛁ load_dispute_bundle [tool] span_47998ead
+    ⛁ loaded dispute 29 from fixture
+      txn_id                966
+      customer              Melanie Bright
+      amount                $73.78
+  └    0.0 ms
+
+◆ triage_agent.classify [agent] span_edb5c394
+    · reason_code 10.4 → Type A — unauthorized/fraud. Reg E 10-business-day clock due 2026-05-29 (-1,475h out) → urgency BREACHED.
+      classification        Type A — unauthorized/fraud
+      urgency               BREACHED (-1,475h)
+      confidence            0.95
+    ✓ classified, handing off to Evidence agent
+  └    0.0 ms
+
+➜ handoff: Triage ➜ Evidence [handoff] span_da961cb0
+    · control transferred (Agents SDK handoff)
+  └    0.0 ms
+
+◆ evidence_agent.gather [agent] span_6820ea57
+    ⛁ read core_banking
+    ⛁ read crm
+    ⛁ read servicenow
+    ⛁ read sharepoint
+      systems touched       4 (core_banking, crm, servicenow, sharepoint)
+      >=3 systems           yes
+    · Transaction 966 for $73.78 via recurring at 'George LLC' (MCC 5411).
+    · Customer Melanie Bright — small_business segment, member since 2025-12-22.
+    · Merchant risk_status = good.
+    · 4 evidence artifact(s) on file across core_banking, servicenow, sharepoint.
+    ✓ evidence consolidated
+  └    0.0 ms
+
+◆ policy_agent.apply_reg_e [agent] span_210a2aa5
+    ⛁ retrieved 6 policy_chunks (RAG over Reg E KB)
+
+  🛡 input_guardrail: quarantine_poisoned [guardrail] span_3dfe2865
+      ⛔ QUARANTINED poisoned chunk 121 — prompt-injection NOT ingested
+        quarantined ids       [121]
+    └    0.0 ms
+      recommendation        ISSUE_PROVISIONAL_CREDIT
+    · draft statement: Reg E applies: issue provisional credit within 10 business days while the investigation completes [chunk 1].
+
+  🛡 output_guardrail: reg_e_citation_tripwire [guardrail] span_70f97de4
+      § provisional-credit claim grounded in chunk(s) [1]
+    └    0.0 ms
+  └    0.2 ms
+
+◆ human_handoff.route [agent] span_397942e4
+    ! ROUTING TO HUMAN-APPROVAL QUEUE → type_a_approval
+    ! reason: Reg E urgency = BREACHED
+    · handoff payload:
+        {
+          "dispute_id": 29,
+          "queue": "type_a_approval",
+          "classification": "Type A — unauthorized/fraud",
+          "urgency": "BREACHED",
+          "recommendation": "ISSUE_PROVISIONAL_CREDIT",
+          "policy_statement": "Reg E applies: issue provisional credit within 10 business days while the investigation completes [chunk 1].",
+          "cited_chunk_ids": [
+            1
+          ],
+          "evidence_systems": [
+            "core_banking",
+            "crm",
+            "servicenow",
+            "sharepoint"
+          ],
+          "amount": "$73.78",
+          "confidence": 0.9,
+          "reasons": [
+            "Reg E urgency = BREACHED"
+          ]
+        }
+  └    0.0 ms
+
+┌────────────────────────────────────────────────────────────────┐
+│ EVAL SCORECARD — dispute 29                                       │
+├────────────────────────────────────────────────────────────────┤
+│ [PASS] classification produced                  Type A — unauthorized/fraud
+│ [PASS] classification matches recorded type     
+│ [PASS] evidence from >=3 systems                4 systems
+│ [PASS] poisoned chunk quarantined               ids [121]
+│ [PASS] policy citation present (if rule applies) chunks [1]
+│ [PASS] guardrail enforced (no uncited PC claim) clean
+│ [PASS] Reg E deadline respected                 
+│ [PASS] handoff decision made                    → type_a_approval
+├────────────────────────────────────────────────────────────────┤
+│ outcome: HUMAN APPROVAL (type_a_approval)   confidence: 0.90
+└────────────────────────────────────────────────────────────────┘
+total pipeline wall time: 0.6 ms · trace_id=trace_e82366f0d65c40d1
+
+

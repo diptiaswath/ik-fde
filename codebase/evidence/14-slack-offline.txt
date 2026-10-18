@@ -1,0 +1,65 @@
+# 14-slack-offline — Slack escalation: 7 scenarios handled offline
+# run: 2026-07-30 05:21 UTC
+# cwd: course/week-16/lab
+# exit: 0   status: PASS
+
+$ python3 slack_integration_demo.py
+
+
+==========================================================================
+  W16 — Slack integration through the governed MCP door
+  the agent pings on-call when it escalates — scoped, audited, and
+  hardened against the failures real integrations actually hit
+==========================================================================
+
+▶ happy
+  SETUP: happy path (on-call, Type-A)  →  HANDLED: posted to Slack, audit row written
+
+▶ rbac
+    403 DENIED — analyst_b@meridian.test (scope=type_b) may not escalate Type-A to Slack
+    audit deny row: {"acting_identity": "analyst_b@meridian.test", "scope": "type_b", "action": "notify_slack", "resource": "slack/#disputes-oncall#dispute/4417", "decision": "deny"}
+  RBAC: RBAC (Type-B tries to escalate Type-A)  →  HANDLED: 403 DENIED at the door + deny row audited — Slack never called
+
+▶ rate_limit
+    attempt 1: 429 rate-limited → backoff 1s, retrying
+  PROBLEM: rate_limit (Slack 429)  →  HANDLED: backoff + retry → delivered_via=slack
+
+▶ expired_webhook
+    attempt 1: hard failure (slack 404: {"error": "invalid_token"}) → not retryable
+    Slack undeliverable → routing to the ticket fallback (escalation is never lost)
+  PROBLEM: expired_webhook (Slack 404 invalid_token)  →  HANDLED: graceful fallback → ticket TCK-4417-fallback (escalation not lost)
+
+▶ timeout
+    attempt 1: hard failure (slack timeout: no response) → not retryable
+    Slack undeliverable → routing to the ticket fallback (escalation is never lost)
+    attempt 1: hard failure (slack timeout: no response) → not retryable
+    circuit-breaker TRIPPED after 2 consecutive failures — further calls short-circuit to the fallback
+    Slack undeliverable → routing to the ticket fallback (escalation is never lost)
+    circuit-breaker OPEN → skipping Slack, routing to the ticket fallback
+  PROBLEM: timeout (Slack hangs, ×3)  →  HANDLED: breaker opened after 2 fails; 3rd call short-circuited → reason=circuit_open
+
+▶ duplicate
+    idempotency: key 'dup-1' already sent → returning prior result, not re-posting
+  PROBLEM: duplicate (same idempotency key twice)  →  HANDLED: second send deduped=True — on-call paged once, not twice
+
+▶ schema_drift
+    defensive-parse: unexpected Slack response body '{"status": "accepted", "ts": "1720000000.1"}'; HTTP was 200 → treating as delivered, flagging for review
+  PROBLEM: schema_drift (200 but response shape changed)  →  HANDLED: defensive parse → still delivered_via=slack, flagged not crashed
+
+--------------------------------------------------------------------------
+  SUMMARY — every failure mode handled deterministically, in the door
+--------------------------------------------------------------------------
+  scenario          what happened                                           
+  happy             posted to Slack, audit row written                      
+  rbac              403 DENIED at the door + deny row audited — Slack neve  
+  rate_limit        backoff + retry → delivered_via=slack                   
+  expired_webhook   graceful fallback → ticket TCK-4417-fallback (escalati  
+  timeout           breaker opened after 2 fails; 3rd call short-circuited  
+  duplicate         second send deduped=True — on-call paged once, not twi  
+  schema_drift      defensive parse → still delivered_via=slack, flagged n  
+
+  Takeaway: the model never sees a raw 500, a lost page, or a double-page.
+  Backoff, fallback, circuit breaker, idempotency, defensive parse — all
+  live in the deterministic integration layer. That is the FDE's job.
+
+

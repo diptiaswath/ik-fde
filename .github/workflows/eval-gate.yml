@@ -1,0 +1,41 @@
+# The merge button is a test: the smoke eval must pass or the PR is blocked.
+# This is the gate the W15 class watches and the W17 class hardens.
+name: eval-gate
+on:
+  pull_request:
+    paths: ["codebase/agent/**", "codebase/labs/**"]
+  push:
+    branches: [main]
+    paths: ["codebase/agent/**", "codebase/labs/**"]
+jobs:
+  smoke-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run the smoke eval gate (mock brain — no key needed)
+        working-directory: codebase/agent
+        run: |
+          PYTHONPATH=src python3 -m meridian_agent eval \
+            --suite smoke --disputes 1-20 --min-pass 0.9 --mock
+      - name: Install test deps
+        run: python -m pip install --quiet "pytest>=8.0"
+      - name: Unit tests
+        working-directory: codebase/agent
+        run: PYTHONPATH=src python3 -m pytest -q
+
+  golden-gate:
+    # The W17 deploy gate: the full 150 cases including the adversarial ones.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: The 150-case golden gate (mock brain — mock IS the CI brain)
+        working-directory: codebase/agent
+        run: |
+          PYTHONPATH=src python3 -m meridian_agent eval \
+            --suite golden --min-pass 0.95 --mock

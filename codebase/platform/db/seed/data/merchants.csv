@@ -1,0 +1,2001 @@
+merchant_id,name,category,mcc,country,risk_status
+1,Sunrise Outfitters,retail,5999,US,good
+2,Fairview Electronics,electronics,5732,US,good
+3,Evergreen Department Store,department_store,5311,US,good
+4,Highland & Co,retail,5999,US,good
+5,Golden Audio,electronics,5732,US,good
+6,Silver Connect,telecom,4814,US,good
+7,Oakwood Goods,retail,5999,US,good
+8,Metro Pioneer,transit,4111,US,good
+9,Evergreen Digital,electronics,5732,US,good
+10,Lakeside Bank ATM,atm,6011,US,good
+11,Café Cedar,restaurant,5812,US,good
+12,Oakwood Interactive,gaming,7995,US,good
+13,Oakwood & Co,retail,5999,US,good
+14,Cedar Goods,retail,5999,US,good
+15,Golden Energy,fuel,5541,US,good
+16,Granite Games,gaming,7995,US,good
+17,Meadow Gas & Go,fuel,5541,US,good
+18,Stonebridge Cash Point,atm,6011,US,watch
+19,Harbor Games,gaming,7995,US,good
+20,Maple Wireless,telecom,4814,US,watch
+21,Highland Games,gaming,7995,US,good
+22,Beacon Digital,electronics,5732,US,good
+23,Silver Energy,fuel,5541,US,good
+24,Ridgeway Rideshare,transit,4111,US,good
+25,Oakwood Market,grocery,5411,US,good
+26,Brightline Kitchen,restaurant,5812,US,good
+27,Parkside Energy,fuel,5541,US,good
+28,Crown Department Store,department_store,5311,US,good
+29,Evergreen Fuel,fuel,5541,US,good
+30,Summit Outfitters,retail,5999,US,good
+31,Vintage Bank ATM,atm,6011,US,good
+32,Parkside Petroleum,fuel,5541,US,good
+33,Evergreen Kitchen,restaurant,5812,US,watch
+34,Willow & Sons,department_store,5311,US,good
+35,Lakeside & Co,retail,5999,US,good
+36,Highland & Sons,department_store,5311,US,good
+37,Stonebridge Bank ATM,atm,6011,US,good
+38,Stonebridge Tech,electronics,5732,US,good
+39,Redwood Electronics,electronics,5732,US,good
+40,Pioneer Market,grocery,5411,US,good
+41,Sunrise Connect,telecom,4814,US,good
+42,Northgate Outfitters,retail,5999,US,good
+43,Metro Fairview,transit,4111,US,good
+44,Ridgeway Cash Point,atm,6011,US,good
+45,Parkside Telecom,telecom,4814,US,good
+46,Liberty Grill,restaurant,5812,US,good
+47,Golden Supply Co,retail,5999,US,good
+48,Brookline's,department_store,5311,US,good
+49,Lakeside Cash Point,atm,6011,US,good
+50,Anchor Play,gaming,7995,US,good
+51,Willow Bank ATM,atm,6011,US,good
+52,Harbor Games,gaming,7995,US,good
+53,Golden Grocery,grocery,5411,US,good
+54,Ridgeway Fresh Market,grocery,5411,US,good
+55,Harbor Fuel,fuel,5541,US,good
+56,Anchor Goods,retail,5999,US,good
+57,Stonebridge Connect,telecom,4814,US,good
+58,Birch Connect,telecom,4814,US,good
+59,Harbor Play,gaming,7995,US,good
+60,Hillcrest Energy,fuel,5541,US,good
+61,Pioneer Connect,telecom,4814,US,good
+62,Granite Supply Co,retail,5999,US,good
+63,Parkside Connect,telecom,4814,US,good
+64,Aspen Tech,electronics,5732,US,good
+65,Silver & Sons,department_store,5311,US,good
+66,Parkside Fresh Market,grocery,5411,US,good
+67,Oakwood Bank ATM,atm,6011,US,good
+68,Anchor Department Store,department_store,5311,US,good
+69,Brookline Cash Point,atm,6011,US,good
+70,Northgate Grocery,grocery,5411,US,good
+71,Birch Energy,fuel,5541,US,good
+72,Riverside Supply Co,retail,5999,US,good
+73,Northgate Games,gaming,7995,US,good
+74,Lakeside ATM,atm,6011,US,good
+75,Hillcrest Rideshare,transit,4111,US,good
+76,Liberty Wireless,telecom,4814,US,good
+77,Highland Cash Point,atm,6011,US,good
+78,Maple Fuel,fuel,5541,US,good
+79,Granite Studios,gaming,7995,US,good
+80,Fairview Department Store,department_store,5311,US,good
+81,Meadow's,department_store,5311,US,good
+82,Highland ATM,atm,6011,US,good
+83,Northgate Grocery,grocery,5411,US,good
+84,Riverside Cash Point,atm,6011,US,good
+85,Crown Bistro,restaurant,5812,US,watch
+86,Liberty Rideshare,transit,4111,US,good
+87,Liberty Cash Point,atm,6011,US,good
+88,Golden Department Store,department_store,5311,US,good
+89,Granite Market,grocery,5411,US,good
+90,Harbor Telecom,telecom,4814,US,good
+91,Granite Bistro,restaurant,5812,US,watch
+92,Harbor Wireless,telecom,4814,US,good
+93,Fairview & Co,retail,5999,US,good
+94,Summit Cash Point,atm,6011,US,good
+95,Evergreen Foods,grocery,5411,US,good
+96,Silver Department Store,department_store,5311,US,good
+97,Parkside Rideshare,transit,4111,US,good
+98,Stonebridge Grocery,grocery,5411,US,good
+99,Ridgeway Supply Co,retail,5999,US,good
+100,Willow Outfitters,retail,5999,US,good
+101,Hillcrest Gas & Go,fuel,5541,US,good
+102,Copper Cab Co,transit,4111,US,good
+103,House of Oakwood,department_store,5311,US,good
+104,Brookline Goods,retail,5999,US,good
+105,Hillcrest Tech,electronics,5732,US,good
+106,Oakwood Kitchen,restaurant,5812,US,good
+107,Crown Mobile,telecom,4814,US,good
+108,Beacon Outfitters,retail,5999,US,good
+109,Golden Department Store,department_store,5311,US,good
+110,Parkside Cab Co,transit,4111,US,good
+111,Parkside Market,grocery,5411,US,good
+112,Maple Games,gaming,7995,US,good
+113,Highland Cab Co,transit,4111,US,good
+114,Anchor Fresh Market,grocery,5411,US,good
+115,House of Birch,department_store,5311,US,good
+116,Oakwood Rideshare,transit,4111,US,good
+117,House of Union,department_store,5311,US,watch
+118,Liberty Cab Co,transit,4111,US,good
+119,Northgate Cash Point,atm,6011,US,good
+120,Granite Games,gaming,7995,US,good
+121,Vintage Cab Co,transit,4111,US,good
+122,Sunrise Grocery,grocery,5411,US,good
+123,Pioneer Fresh Market,grocery,5411,US,good
+124,Northgate Supply Co,retail,5999,US,good
+125,Parkside's,department_store,5311,US,good
+126,Hillcrest Supply Co,retail,5999,US,good
+127,Vintage Games,gaming,7995,US,good
+128,Willow Electronics,electronics,5732,US,good
+129,Harbor Play,gaming,7995,US,good
+130,Parkside Tech,electronics,5732,US,good
+131,Harbor Energy,fuel,5541,US,good
+132,Harbor Digital,electronics,5732,US,good
+133,Cedar Cash Point,atm,6011,US,good
+134,Copper Mobile,telecom,4814,US,good
+135,Evergreen Telecom,telecom,4814,US,good
+136,Redwood Fuel,fuel,5541,US,good
+137,Maple Tech,electronics,5732,US,good
+138,Evergreen Outfitters,retail,5999,US,good
+139,Pioneer Fuel,fuel,5541,US,good
+140,Parkside Grill,restaurant,5812,US,good
+141,Stonebridge Outfitters,retail,5999,US,good
+142,Pioneer & Co,retail,5999,US,good
+143,Granite Supply Co,retail,5999,US,good
+144,Evergreen Market,grocery,5411,US,good
+145,Fairview Petroleum,fuel,5541,US,good
+146,Oakwood Petroleum,fuel,5541,US,good
+147,Northgate Digital,electronics,5732,US,good
+148,Aspen Energy,fuel,5541,US,good
+149,Oakwood & Sons,department_store,5311,US,good
+150,Willow Cash Point,atm,6011,US,good
+151,Copper Foods,grocery,5411,US,good
+152,Beacon Transit,transit,4111,US,good
+153,Copper Department Store,department_store,5311,US,good
+154,Clearwater Grocery,grocery,5411,US,good
+155,Summit Audio,electronics,5732,US,good
+156,Aspen & Co,retail,5999,US,good
+157,Redwood Telecom,telecom,4814,US,watch
+158,Stonebridge Fuel,fuel,5541,US,good
+159,Vintage Play,gaming,7995,US,watch
+160,Clearwater Grocery,grocery,5411,US,good
+161,Golden Supply Co,retail,5999,US,good
+162,Oakwood & Sons,department_store,5311,US,good
+163,Highland Play,gaming,7995,US,good
+164,Pioneer Tech,electronics,5732,US,good
+165,Crown Cash Point,atm,6011,US,good
+166,Union Market,grocery,5411,US,watch
+167,Brookline Interactive,gaming,7995,US,good
+168,Highland Fresh Market,grocery,5411,US,good
+169,House of Anchor,department_store,5311,US,good
+170,Summit Cab Co,transit,4111,US,good
+171,Clearwater Supply Co,retail,5999,US,good
+172,The Sunrise Table,restaurant,5812,US,good
+173,Cedar Grocery,grocery,5411,US,watch
+174,Willow Supply Co,retail,5999,US,good
+175,Evergreen Telecom,telecom,4814,US,good
+176,Parkside Energy,fuel,5541,US,good
+177,Beacon Fuel,fuel,5541,US,good
+178,Crown Fresh Market,grocery,5411,US,good
+179,Meadow Grill,restaurant,5812,US,good
+180,Brookline Games,gaming,7995,US,good
+181,Willow Energy,fuel,5541,US,good
+182,Clearwater Electronics,electronics,5732,US,good
+183,Summit & Co,retail,5999,US,good
+184,House of Copper,department_store,5311,US,good
+185,Stonebridge's,department_store,5311,US,good
+186,Maple Games,gaming,7995,US,good
+187,Clearwater Fresh Market,grocery,5411,US,good
+188,Aspen Foods,grocery,5411,US,good
+189,Vintage Fresh Market,grocery,5411,US,good
+190,Ridgeway Cash Point,atm,6011,US,good
+191,Pioneer Gas & Go,fuel,5541,US,good
+192,Clearwater & Co,retail,5999,US,good
+193,Lakeside Goods,retail,5999,US,good
+194,Harbor Mobile,telecom,4814,US,good
+195,Café Evergreen,restaurant,5812,US,good
+196,Aspen & Co,retail,5999,US,good
+197,Stonebridge Grocery,grocery,5411,US,good
+198,Maple Telecom,telecom,4814,US,good
+199,Liberty Kitchen,restaurant,5812,US,good
+200,Pioneer Digital,electronics,5732,US,good
+201,Union Gas & Go,fuel,5541,US,good
+202,Sunrise Gas & Go,fuel,5541,US,good
+203,Silver Bank ATM,atm,6011,US,watch
+204,Birch Audio,electronics,5732,US,good
+205,Ridgeway Grocery,grocery,5411,US,good
+206,Highland Cash Point,atm,6011,US,good
+207,Silver & Co,retail,5999,US,good
+208,Evergreen Department Store,department_store,5311,US,good
+209,Oakwood Bistro,restaurant,5812,US,good
+210,Ridgeway Department Store,department_store,5311,US,good
+211,Redwood Audio,electronics,5732,US,good
+212,Summit Petroleum,fuel,5541,US,good
+213,Birch Mobile,telecom,4814,US,good
+214,Riverside Interactive,gaming,7995,US,good
+215,Stonebridge Electronics,electronics,5732,US,good
+216,Brightline & Sons,department_store,5311,US,good
+217,Brightline Fuel,fuel,5541,US,good
+218,Vintage & Co,retail,5999,US,watch
+219,Café Aspen,restaurant,5812,US,good
+220,Parkside Cab Co,transit,4111,US,good
+221,Anchor Play,gaming,7995,US,good
+222,Anchor Kitchen,restaurant,5812,US,good
+223,Stonebridge Petroleum,fuel,5541,US,good
+224,Harbor Department Store,department_store,5311,US,good
+225,Willow Market,grocery,5411,US,good
+226,Granite ATM,atm,6011,US,good
+227,Clearwater ATM,atm,6011,US,good
+228,Hillcrest Bistro,restaurant,5812,US,good
+229,Fairview Market,grocery,5411,US,good
+230,Maple Mobile,telecom,4814,US,good
+231,Highland Audio,electronics,5732,US,good
+232,Brightline Supply Co,retail,5999,US,good
+233,Copper Supply Co,retail,5999,US,good
+234,Maple Studios,gaming,7995,US,good
+235,Riverside Grocery,grocery,5411,US,good
+236,Ridgeway Studios,gaming,7995,US,good
+237,Redwood Rideshare,transit,4111,US,good
+238,Ridgeway Foods,grocery,5411,US,good
+239,Birch Grocery,grocery,5411,US,good
+240,Pioneer Grocery,grocery,5411,US,good
+241,Summit Connect,telecom,4814,US,good
+242,Highland Wireless,telecom,4814,US,good
+243,Stonebridge Outfitters,retail,5999,US,good
+244,Cedar Cash Point,atm,6011,US,good
+245,Liberty Foods,grocery,5411,US,good
+246,Meadow Telecom,telecom,4814,US,good
+247,Lakeside Grocery,grocery,5411,US,good
+248,Copper Kitchen,restaurant,5812,US,good
+249,Redwood Department Store,department_store,5311,US,good
+250,Summit Grill,restaurant,5812,US,good
+251,Vintage Bank ATM,atm,6011,US,good
+252,Pioneer Department Store,department_store,5311,US,good
+253,Clearwater Fresh Market,grocery,5411,US,good
+254,Silver Department Store,department_store,5311,US,good
+255,Summit Petroleum,fuel,5541,US,good
+256,Birch Connect,telecom,4814,US,good
+257,Meadow Tech,electronics,5732,US,good
+258,Stonebridge Games,gaming,7995,US,good
+259,Meadow Goods,retail,5999,US,good
+260,Crown Bistro,restaurant,5812,US,good
+261,Sunrise's,department_store,5311,US,good
+262,Highland Market,grocery,5411,US,good
+263,Crown Transit,transit,4111,US,good
+264,Lakeside & Co,retail,5999,US,good
+265,Evergreen Telecom,telecom,4814,US,good
+266,Pioneer Rideshare,transit,4111,US,watch
+267,Willow & Co,retail,5999,US,good
+268,Evergreen Connect,telecom,4814,US,good
+269,Golden & Co,retail,5999,US,bad
+270,Copper Electronics,electronics,5732,US,good
+271,House of Aspen,department_store,5311,US,good
+272,Parkside Supply Co,retail,5999,US,good
+273,Willow Mobile,telecom,4814,US,good
+274,Harbor Fresh Market,grocery,5411,US,good
+275,Metro Brightline,transit,4111,US,good
+276,Crown ATM,atm,6011,US,watch
+277,Harbor & Sons,department_store,5311,US,good
+278,Beacon Transit,transit,4111,US,good
+279,Stonebridge Grill,restaurant,5812,US,good
+280,Evergreen Studios,gaming,7995,US,good
+281,Granite Petroleum,fuel,5541,US,good
+282,Harbor Digital,electronics,5732,US,good
+283,Brookline Goods,retail,5999,US,good
+284,Parkside Petroleum,fuel,5541,US,good
+285,Hillcrest Foods,grocery,5411,US,good
+286,Silver Fuel,fuel,5541,US,good
+287,Hillcrest's,department_store,5311,US,good
+288,Beacon Market,grocery,5411,US,good
+289,Evergreen Games,gaming,7995,US,good
+290,Golden Bistro,restaurant,5812,US,good
+291,Golden Transit,transit,4111,US,good
+292,Meadow Foods,grocery,5411,US,good
+293,Highland Audio,electronics,5732,US,good
+294,Hillcrest Telecom,telecom,4814,US,good
+295,Liberty ATM,atm,6011,US,good
+296,Metro Brightline,transit,4111,US,good
+297,Maple & Co,retail,5999,US,good
+298,Highland Petroleum,fuel,5541,US,good
+299,Parkside Rideshare,transit,4111,US,good
+300,Parkside & Sons,department_store,5311,US,good
+301,The Fairview Table,restaurant,5812,US,good
+302,Hillcrest Grocery,grocery,5411,US,good
+303,Meadow Grocery,grocery,5411,US,good
+304,Clearwater Fuel,fuel,5541,US,good
+305,Café Northgate,restaurant,5812,US,good
+306,Brookline Energy,fuel,5541,US,good
+307,Brightline Foods,grocery,5411,US,good
+308,Crown Petroleum,fuel,5541,US,good
+309,Harbor Digital,electronics,5732,US,good
+310,Beacon Electronics,electronics,5732,US,good
+311,Hillcrest Fuel,fuel,5541,US,good
+312,Vintage Cash Point,atm,6011,US,good
+313,Stonebridge & Co,retail,5999,US,good
+314,Willow's,department_store,5311,US,good
+315,Willow Gas & Go,fuel,5541,US,watch
+316,Maple Interactive,gaming,7995,US,good
+317,Ridgeway Goods,retail,5999,US,good
+318,Ridgeway Rideshare,transit,4111,US,good
+319,Maple Wireless,telecom,4814,US,good
+320,Union Fresh Market,grocery,5411,US,good
+321,Meadow Cab Co,transit,4111,US,good
+322,Cedar Bistro,restaurant,5812,US,watch
+323,Cedar & Sons,department_store,5311,US,good
+324,Oakwood Grocery,grocery,5411,US,good
+325,Brightline Electronics,electronics,5732,US,good
+326,Granite Grocery,grocery,5411,US,good
+327,Ridgeway Audio,electronics,5732,US,good
+328,Brookline Wireless,telecom,4814,US,good
+329,Liberty Goods,retail,5999,US,good
+330,Liberty Bistro,restaurant,5812,US,good
+331,Maple Gas & Go,fuel,5541,US,good
+332,Brightline Mobile,telecom,4814,US,good
+333,Meadow ATM,atm,6011,US,good
+334,Clearwater Transit,transit,4111,US,good
+335,Pioneer Grocery,grocery,5411,US,good
+336,Golden & Co,retail,5999,US,good
+337,Fairview Digital,electronics,5732,US,good
+338,Willow Play,gaming,7995,US,good
+339,Silver Goods,retail,5999,US,good
+340,Brookline Audio,electronics,5732,US,good
+341,Riverside Outfitters,retail,5999,US,good
+342,Granite Petroleum,fuel,5541,US,good
+343,Pioneer Bistro,restaurant,5812,US,good
+344,Granite Cab Co,transit,4111,US,good
+345,Cedar Department Store,department_store,5311,US,good
+346,Crown Studios,gaming,7995,US,good
+347,Beacon Electronics,electronics,5732,US,good
+348,Sunrise Telecom,telecom,4814,US,good
+349,Evergreen Interactive,gaming,7995,US,good
+350,Meadow Digital,electronics,5732,US,good
+351,Parkside Rideshare,transit,4111,US,good
+352,Redwood Fuel,fuel,5541,US,good
+353,Harbor Cash Point,atm,6011,US,good
+354,Union & Co,retail,5999,US,good
+355,Silver Supply Co,retail,5999,US,good
+356,Café Sunrise,restaurant,5812,US,good
+357,Vintage Wireless,telecom,4814,US,good
+358,Anchor Rideshare,transit,4111,US,good
+359,Willow Petroleum,fuel,5541,US,watch
+360,Hillcrest Fuel,fuel,5541,US,good
+361,Golden Audio,electronics,5732,US,good
+362,Evergreen Fresh Market,grocery,5411,US,good
+363,Anchor Bank ATM,atm,6011,US,good
+364,Anchor Studios,gaming,7995,US,good
+365,Granite Games,gaming,7995,US,good
+366,Maple Transit,transit,4111,US,good
+367,Evergreen Rideshare,transit,4111,US,good
+368,Golden Petroleum,fuel,5541,US,good
+369,Brightline Wireless,telecom,4814,US,good
+370,Cedar Electronics,electronics,5732,US,good
+371,Lakeside Foods,grocery,5411,US,good
+372,Cedar Fuel,fuel,5541,US,good
+373,Ridgeway & Co,retail,5999,US,good
+374,Golden Electronics,electronics,5732,US,watch
+375,Café Stonebridge,restaurant,5812,US,good
+376,Northgate Gas & Go,fuel,5541,US,good
+377,Brightline Digital,electronics,5732,US,good
+378,Lakeside ATM,atm,6011,US,good
+379,Copper Grill,restaurant,5812,US,good
+380,Sunrise Studios,gaming,7995,US,good
+381,Redwood Bank ATM,atm,6011,US,good
+382,Cedar Cash Point,atm,6011,US,good
+383,Granite & Sons,department_store,5311,US,good
+384,Riverside Energy,fuel,5541,US,good
+385,Lakeside Mobile,telecom,4814,US,good
+386,Brightline Supply Co,retail,5999,US,good
+387,Summit Electronics,electronics,5732,US,good
+388,Highland Fuel,fuel,5541,US,good
+389,Liberty Goods,retail,5999,US,good
+390,Redwood Transit,transit,4111,US,good
+391,Riverside's,department_store,5311,US,good
+392,Oakwood Electronics,electronics,5732,US,good
+393,Evergreen Foods,grocery,5411,US,good
+394,Clearwater Connect,telecom,4814,US,good
+395,Meadow Goods,retail,5999,US,good
+396,Metro Meadow,transit,4111,US,watch
+397,Hillcrest Market,grocery,5411,US,good
+398,Beacon Connect,telecom,4814,US,good
+399,Sunrise Interactive,gaming,7995,US,good
+400,Birch & Co,retail,5999,US,good
+401,Hillcrest Games,gaming,7995,US,good
+402,Birch Kitchen,restaurant,5812,US,good
+403,Crown Bank ATM,atm,6011,US,good
+404,Crown Fresh Market,grocery,5411,US,good
+405,Maple Department Store,department_store,5311,US,good
+406,Riverside Play,gaming,7995,US,good
+407,Crown Telecom,telecom,4814,US,good
+408,Parkside ATM,atm,6011,US,good
+409,Golden Cab Co,transit,4111,US,good
+410,Harbor Supply Co,retail,5999,US,good
+411,Northgate Bistro,restaurant,5812,US,good
+412,Parkside Energy,fuel,5541,US,good
+413,Parkside Mobile,telecom,4814,US,good
+414,Redwood Games,gaming,7995,US,good
+415,Oakwood Studios,gaming,7995,US,good
+416,Clearwater Cab Co,transit,4111,US,good
+417,Redwood Supply Co,retail,5999,US,good
+418,Golden Cab Co,transit,4111,US,good
+419,Golden ATM,atm,6011,US,good
+420,Highland Outfitters,retail,5999,US,good
+421,Golden Gas & Go,fuel,5541,US,good
+422,Metro Cedar,transit,4111,US,good
+423,The Maple Table,restaurant,5812,US,good
+424,Highland Tech,electronics,5732,US,good
+425,Brookline Petroleum,fuel,5541,US,good
+426,Riverside Cab Co,transit,4111,US,good
+427,Birch Cash Point,atm,6011,US,good
+428,Fairview Supply Co,retail,5999,US,good
+429,Northgate Goods,retail,5999,US,good
+430,Beacon Studios,gaming,7995,US,good
+431,Liberty Mobile,telecom,4814,US,good
+432,Stonebridge Outfitters,retail,5999,US,good
+433,Brightline Energy,fuel,5541,US,good
+434,Anchor Fresh Market,grocery,5411,US,good
+435,Meadow Electronics,electronics,5732,US,good
+436,Crown Cab Co,transit,4111,US,good
+437,Fairview Interactive,gaming,7995,US,good
+438,Golden Grill,restaurant,5812,US,good
+439,Evergreen Tech,electronics,5732,US,good
+440,Brightline Games,gaming,7995,US,good
+441,Cedar Interactive,gaming,7995,US,good
+442,Fairview Foods,grocery,5411,US,good
+443,Copper Market,grocery,5411,US,good
+444,House of Granite,department_store,5311,US,good
+445,Crown Bank ATM,atm,6011,US,good
+446,Oakwood Fresh Market,grocery,5411,US,good
+447,Brightline Tech,electronics,5732,US,good
+448,Crown Gas & Go,fuel,5541,US,good
+449,Vintage Fresh Market,grocery,5411,US,good
+450,Harbor Rideshare,transit,4111,US,good
+451,Willow Cash Point,atm,6011,US,good
+452,House of Clearwater,department_store,5311,US,good
+453,Summit Goods,retail,5999,US,good
+454,Liberty Kitchen,restaurant,5812,US,good
+455,Granite ATM,atm,6011,US,good
+456,Meadow Fuel,fuel,5541,US,good
+457,Evergreen Electronics,electronics,5732,US,good
+458,Harbor Foods,grocery,5411,US,good
+459,Brightline Electronics,electronics,5732,US,watch
+460,Parkside Fuel,fuel,5541,US,good
+461,Aspen's,department_store,5311,US,good
+462,Metro Silver,transit,4111,US,good
+463,Vintage Department Store,department_store,5311,US,good
+464,Brookline Telecom,telecom,4814,US,good
+465,Anchor Cab Co,transit,4111,US,watch
+466,Northgate Market,grocery,5411,US,good
+467,Maple Market,grocery,5411,US,good
+468,Willow Foods,grocery,5411,US,good
+469,Golden Grocery,grocery,5411,US,good
+470,Meadow Market,grocery,5411,US,good
+471,Lakeside Interactive,gaming,7995,US,good
+472,Pioneer Bank ATM,atm,6011,US,good
+473,House of Northgate,department_store,5311,US,good
+474,Vintage Outfitters,retail,5999,US,good
+475,Metro Ridgeway,transit,4111,US,good
+476,Metro Summit,transit,4111,US,good
+477,Liberty Grill,restaurant,5812,US,good
+478,Pioneer Fuel,fuel,5541,US,good
+479,Crown Petroleum,fuel,5541,US,good
+480,Brookline Fuel,fuel,5541,US,watch
+481,Brookline's,department_store,5311,US,good
+482,Parkside Goods,retail,5999,US,good
+483,House of Clearwater,department_store,5311,US,good
+484,Ridgeway ATM,atm,6011,US,good
+485,Evergreen Cab Co,transit,4111,US,good
+486,Oakwood Digital,electronics,5732,US,good
+487,Summit Foods,grocery,5411,US,good
+488,Clearwater Gas & Go,fuel,5541,US,good
+489,Ridgeway Bistro,restaurant,5812,US,good
+490,Meadow Transit,transit,4111,US,watch
+491,Stonebridge Audio,electronics,5732,US,good
+492,Riverside Electronics,electronics,5732,US,good
+493,Fairview Digital,electronics,5732,US,good
+494,Ridgeway ATM,atm,6011,US,good
+495,Brightline Rideshare,transit,4111,US,good
+496,Redwood Supply Co,retail,5999,US,good
+497,Aspen Electronics,electronics,5732,US,good
+498,Summit Department Store,department_store,5311,US,good
+499,Anchor Kitchen,restaurant,5812,US,good
+500,Silver Rideshare,transit,4111,US,good
+501,Sunrise Audio,electronics,5732,US,good
+502,Brookline Fuel,fuel,5541,US,good
+503,Sunrise Wireless,telecom,4814,US,good
+504,Oakwood Rideshare,transit,4111,US,watch
+505,Union Department Store,department_store,5311,US,good
+506,Granite Connect,telecom,4814,US,good
+507,Evergreen Foods,grocery,5411,US,good
+508,Café Highland,restaurant,5812,US,good
+509,Union Mobile,telecom,4814,US,good
+510,Summit Fresh Market,grocery,5411,US,good
+511,Redwood Cash Point,atm,6011,US,good
+512,Golden Gas & Go,fuel,5541,US,good
+513,Lakeside Gas & Go,fuel,5541,US,good
+514,Parkside Play,gaming,7995,US,good
+515,Crown Interactive,gaming,7995,US,good
+516,Metro Clearwater,transit,4111,US,good
+517,Liberty Fresh Market,grocery,5411,US,good
+518,House of Beacon,department_store,5311,US,good
+519,Liberty Games,gaming,7995,US,good
+520,Highland ATM,atm,6011,US,good
+521,Parkside Grill,restaurant,5812,US,good
+522,Copper Market,grocery,5411,US,good
+523,Ridgeway Grocery,grocery,5411,US,good
+524,Cedar ATM,atm,6011,US,good
+525,Brightline Fuel,fuel,5541,US,good
+526,Hillcrest Audio,electronics,5732,US,good
+527,The Cedar Table,restaurant,5812,US,good
+528,Metro Brookline,transit,4111,US,watch
+529,The Anchor Table,restaurant,5812,US,good
+530,Vintage Supply Co,retail,5999,US,good
+531,Aspen Tech,electronics,5732,US,good
+532,Evergreen Petroleum,fuel,5541,US,good
+533,Stonebridge Cab Co,transit,4111,US,good
+534,Hillcrest Digital,electronics,5732,US,good
+535,Harbor Goods,retail,5999,US,watch
+536,Union Fresh Market,grocery,5411,US,good
+537,Granite Market,grocery,5411,US,good
+538,Crown Grocery,grocery,5411,US,good
+539,Sunrise Bistro,restaurant,5812,US,good
+540,Crown Cash Point,atm,6011,US,good
+541,Metro Maple,transit,4111,US,good
+542,Granite & Co,retail,5999,US,good
+543,Evergreen Bank ATM,atm,6011,US,good
+544,House of Redwood,department_store,5311,US,good
+545,Meadow Cash Point,atm,6011,US,good
+546,Brookline Outfitters,retail,5999,US,good
+547,Granite Energy,fuel,5541,US,good
+548,Ridgeway Energy,fuel,5541,US,good
+549,Evergreen Telecom,telecom,4814,US,good
+550,Cedar Tech,electronics,5732,US,good
+551,Hillcrest Department Store,department_store,5311,US,good
+552,Golden & Co,retail,5999,US,good
+553,Ridgeway Audio,electronics,5732,US,good
+554,Evergreen Cash Point,atm,6011,US,good
+555,Metro Evergreen,transit,4111,US,good
+556,Granite ATM,atm,6011,US,good
+557,Anchor Department Store,department_store,5311,US,good
+558,Northgate Bank ATM,atm,6011,US,good
+559,Summit Studios,gaming,7995,US,good
+560,Riverside Studios,gaming,7995,US,watch
+561,Pioneer Fuel,fuel,5541,US,good
+562,Brightline Fuel,fuel,5541,US,good
+563,Maple Mobile,telecom,4814,US,good
+564,Golden Cash Point,atm,6011,US,good
+565,Liberty Goods,retail,5999,US,good
+566,House of Liberty,department_store,5311,US,good
+567,Willow Department Store,department_store,5311,US,good
+568,Beacon Cab Co,transit,4111,US,good
+569,Beacon Mobile,telecom,4814,US,good
+570,The Willow Table,restaurant,5812,US,good
+571,Vintage Department Store,department_store,5311,US,good
+572,Highland Kitchen,restaurant,5812,US,good
+573,Lakeside Wireless,telecom,4814,US,good
+574,Lakeside Connect,telecom,4814,US,good
+575,Metro Ridgeway,transit,4111,US,good
+576,Brookline Mobile,telecom,4814,US,good
+577,Oakwood Outfitters,retail,5999,US,good
+578,Evergreen Transit,transit,4111,US,watch
+579,Copper Bank ATM,atm,6011,US,watch
+580,Beacon Bank ATM,atm,6011,US,good
+581,Ridgeway Cash Point,atm,6011,US,good
+582,Birch Telecom,telecom,4814,US,good
+583,Union Grill,restaurant,5812,US,good
+584,Brookline Goods,retail,5999,US,good
+585,Maple Transit,transit,4111,US,good
+586,Union & Co,retail,5999,US,good
+587,Pioneer Fuel,fuel,5541,US,good
+588,Brightline Interactive,gaming,7995,US,good
+589,Meadow Rideshare,transit,4111,US,good
+590,Stonebridge Supply Co,retail,5999,US,good
+591,Birch Tech,electronics,5732,US,good
+592,Willow Grocery,grocery,5411,US,good
+593,Clearwater Cash Point,atm,6011,US,good
+594,Copper Supply Co,retail,5999,US,good
+595,Birch Gas & Go,fuel,5541,US,good
+596,Aspen Outfitters,retail,5999,US,good
+597,Brightline & Sons,department_store,5311,US,good
+598,Sunrise Market,grocery,5411,US,watch
+599,House of Granite,department_store,5311,US,good
+600,Hillcrest Market,grocery,5411,US,good
+601,Parkside Mobile,telecom,4814,US,good
+602,Parkside's,department_store,5311,US,good
+603,Parkside Outfitters,retail,5999,US,good
+604,Sunrise Telecom,telecom,4814,US,good
+605,Evergreen Studios,gaming,7995,US,good
+606,Granite ATM,atm,6011,US,good
+607,Anchor Digital,electronics,5732,US,good
+608,Redwood Fresh Market,grocery,5411,US,good
+609,Birch Electronics,electronics,5732,US,good
+610,Silver Cab Co,transit,4111,US,good
+611,Crown Wireless,telecom,4814,US,good
+612,Crown Audio,electronics,5732,US,good
+613,Vintage Petroleum,fuel,5541,US,good
+614,Golden Grocery,grocery,5411,US,good
+615,Brightline Petroleum,fuel,5541,US,good
+616,Cedar Bistro,restaurant,5812,US,good
+617,Brightline & Sons,department_store,5311,US,good
+618,Hillcrest Fresh Market,grocery,5411,US,good
+619,The Granite Table,restaurant,5812,US,good
+620,Birch Kitchen,restaurant,5812,US,good
+621,Vintage Tech,electronics,5732,US,good
+622,Meadow Tech,electronics,5732,US,good
+623,Highland Market,grocery,5411,US,good
+624,Meadow Outfitters,retail,5999,US,good
+625,Willow Grill,restaurant,5812,US,good
+626,Copper Wireless,telecom,4814,US,good
+627,Vintage Goods,retail,5999,US,good
+628,Cedar ATM,atm,6011,US,good
+629,Hillcrest ATM,atm,6011,US,good
+630,Hillcrest Foods,grocery,5411,US,good
+631,Summit Fresh Market,grocery,5411,US,watch
+632,Brookline Transit,transit,4111,US,bad
+633,Union Games,gaming,7995,US,good
+634,House of Pioneer,department_store,5311,US,good
+635,Maple Energy,fuel,5541,US,good
+636,Aspen Audio,electronics,5732,US,good
+637,Lakeside & Co,retail,5999,US,watch
+638,Copper Supply Co,retail,5999,US,good
+639,Metro Vintage,transit,4111,US,good
+640,Pioneer Energy,fuel,5541,US,good
+641,House of Union,department_store,5311,US,good
+642,Maple & Co,retail,5999,US,good
+643,Sunrise Gas & Go,fuel,5541,US,good
+644,Riverside Goods,retail,5999,US,good
+645,Willow Department Store,department_store,5311,US,good
+646,Evergreen Supply Co,retail,5999,US,good
+647,Liberty Outfitters,retail,5999,US,good
+648,Meadow Mobile,telecom,4814,US,good
+649,Highland Grocery,grocery,5411,US,good
+650,The Anchor Table,restaurant,5812,US,good
+651,Northgate Cash Point,atm,6011,US,good
+652,Willow Connect,telecom,4814,US,good
+653,Café Aspen,restaurant,5812,US,good
+654,Maple Games,gaming,7995,US,good
+655,Meadow's,department_store,5311,US,good
+656,Oakwood Grill,restaurant,5812,US,good
+657,The Sunrise Table,restaurant,5812,US,good
+658,Crown Kitchen,restaurant,5812,US,good
+659,House of Fairview,department_store,5311,US,good
+660,Hillcrest Kitchen,restaurant,5812,US,good
+661,Northgate Tech,electronics,5732,US,good
+662,Silver Audio,electronics,5732,US,good
+663,Maple ATM,atm,6011,US,watch
+664,Maple Market,grocery,5411,US,good
+665,Hillcrest Digital,electronics,5732,US,good
+666,Aspen Energy,fuel,5541,US,good
+667,Silver Bank ATM,atm,6011,US,watch
+668,Ridgeway's,department_store,5311,US,good
+669,Northgate Department Store,department_store,5311,US,good
+670,The Oakwood Table,restaurant,5812,US,good
+671,Meadow Market,grocery,5411,US,good
+672,Meadow & Sons,department_store,5311,US,good
+673,Redwood Gas & Go,fuel,5541,US,good
+674,Clearwater Outfitters,retail,5999,US,good
+675,Silver Department Store,department_store,5311,US,good
+676,Riverside Wireless,telecom,4814,US,good
+677,Beacon Market,grocery,5411,US,good
+678,Vintage Games,gaming,7995,US,good
+679,Stonebridge Telecom,telecom,4814,US,good
+680,Evergreen Petroleum,fuel,5541,US,watch
+681,Vintage Transit,transit,4111,US,good
+682,Willow Rideshare,transit,4111,US,good
+683,Silver Games,gaming,7995,US,good
+684,Crown Rideshare,transit,4111,US,good
+685,Ridgeway Audio,electronics,5732,US,good
+686,Fairview Energy,fuel,5541,US,good
+687,Granite Electronics,electronics,5732,US,good
+688,Anchor Games,gaming,7995,US,good
+689,Metro Meadow,transit,4111,US,good
+690,Beacon Goods,retail,5999,US,good
+691,Clearwater Market,grocery,5411,US,good
+692,Cedar Cash Point,atm,6011,US,good
+693,Cedar Supply Co,retail,5999,US,good
+694,Vintage Tech,electronics,5732,US,good
+695,Stonebridge Bank ATM,atm,6011,US,good
+696,Meadow Bank ATM,atm,6011,US,watch
+697,Brightline Energy,fuel,5541,US,good
+698,Parkside Energy,fuel,5541,US,good
+699,Stonebridge Audio,electronics,5732,US,watch
+700,Café Fairview,restaurant,5812,US,good
+701,House of Redwood,department_store,5311,US,good
+702,Meadow's,department_store,5311,US,good
+703,Café Brookline,restaurant,5812,US,good
+704,Beacon's,department_store,5311,US,good
+705,Liberty Electronics,electronics,5732,US,good
+706,Highland Connect,telecom,4814,US,good
+707,Evergreen Bank ATM,atm,6011,US,good
+708,Maple Fresh Market,grocery,5411,US,good
+709,Oakwood Foods,grocery,5411,US,good
+710,Riverside Foods,grocery,5411,US,good
+711,Copper Goods,retail,5999,US,good
+712,Riverside Digital,electronics,5732,US,good
+713,Meadow Electronics,electronics,5732,US,good
+714,Beacon & Co,retail,5999,US,good
+715,Cedar Supply Co,retail,5999,US,watch
+716,Aspen Fresh Market,grocery,5411,US,good
+717,Vintage Rideshare,transit,4111,US,good
+718,Copper Connect,telecom,4814,US,good
+719,Silver Outfitters,retail,5999,US,good
+720,Riverside Mobile,telecom,4814,US,good
+721,Union Play,gaming,7995,US,bad
+722,Highland Grocery,grocery,5411,US,good
+723,Willow Supply Co,retail,5999,US,good
+724,Cedar's,department_store,5311,US,good
+725,Liberty Cash Point,atm,6011,US,good
+726,Metro Crown,transit,4111,US,good
+727,The Golden Table,restaurant,5812,US,watch
+728,Meadow & Co,retail,5999,US,good
+729,Willow Market,grocery,5411,US,good
+730,Harbor Studios,gaming,7995,US,good
+731,Birch Connect,telecom,4814,US,watch
+732,Beacon Connect,telecom,4814,US,good
+733,Anchor ATM,atm,6011,US,good
+734,Ridgeway Games,gaming,7995,US,good
+735,Meadow Bistro,restaurant,5812,US,good
+736,Evergreen Games,gaming,7995,US,good
+737,Cedar Outfitters,retail,5999,US,watch
+738,Copper ATM,atm,6011,US,good
+739,Liberty Interactive,gaming,7995,US,good
+740,Meadow Cab Co,transit,4111,US,good
+741,Maple Supply Co,retail,5999,US,good
+742,Metro Anchor,transit,4111,US,good
+743,Cedar's,department_store,5311,US,good
+744,Stonebridge Department Store,department_store,5311,US,good
+745,Redwood Connect,telecom,4814,US,good
+746,Northgate Department Store,department_store,5311,US,good
+747,Clearwater Telecom,telecom,4814,US,good
+748,Redwood Interactive,gaming,7995,US,good
+749,Meadow Fresh Market,grocery,5411,US,good
+750,Café Copper,restaurant,5812,US,good
+751,Ridgeway & Sons,department_store,5311,US,good
+752,Clearwater Outfitters,retail,5999,US,good
+753,Parkside Grill,restaurant,5812,US,good
+754,Golden Transit,transit,4111,US,good
+755,Liberty Supply Co,retail,5999,US,good
+756,Beacon Connect,telecom,4814,US,good
+757,Riverside & Sons,department_store,5311,US,good
+758,Fairview Grocery,grocery,5411,US,good
+759,Café Summit,restaurant,5812,US,good
+760,Clearwater Bank ATM,atm,6011,US,good
+761,Parkside Transit,transit,4111,US,good
+762,Willow Foods,grocery,5411,US,good
+763,The Harbor Table,restaurant,5812,US,good
+764,Metro Copper,transit,4111,US,good
+765,Café Northgate,restaurant,5812,US,good
+766,Copper Digital,electronics,5732,US,good
+767,Highland Transit,transit,4111,US,good
+768,Golden Fresh Market,grocery,5411,US,good
+769,Beacon Telecom,telecom,4814,US,good
+770,Redwood Electronics,electronics,5732,US,good
+771,Vintage Bank ATM,atm,6011,US,good
+772,Oakwood Electronics,electronics,5732,US,watch
+773,Beacon Kitchen,restaurant,5812,US,good
+774,Silver Studios,gaming,7995,US,good
+775,Riverside Kitchen,restaurant,5812,US,good
+776,Vintage Connect,telecom,4814,US,good
+777,Summit Outfitters,retail,5999,US,good
+778,Riverside Audio,electronics,5732,US,good
+779,Lakeside Mobile,telecom,4814,US,good
+780,Cedar Grill,restaurant,5812,US,good
+781,Beacon Energy,fuel,5541,US,good
+782,House of Copper,department_store,5311,US,good
+783,Granite ATM,atm,6011,US,good
+784,Sunrise Petroleum,fuel,5541,US,good
+785,Sunrise Telecom,telecom,4814,US,good
+786,Summit Goods,retail,5999,US,good
+787,House of Parkside,department_store,5311,US,good
+788,Aspen Telecom,telecom,4814,US,good
+789,Brightline Transit,transit,4111,US,good
+790,Brightline Outfitters,retail,5999,US,good
+791,Copper ATM,atm,6011,US,good
+792,Willow Department Store,department_store,5311,US,good
+793,Northgate Tech,electronics,5732,US,good
+794,Redwood Electronics,electronics,5732,US,good
+795,Summit Cash Point,atm,6011,US,good
+796,Clearwater Fresh Market,grocery,5411,US,good
+797,Fairview & Sons,department_store,5311,US,good
+798,Cedar Mobile,telecom,4814,US,good
+799,Beacon Digital,electronics,5732,US,good
+800,Parkside Telecom,telecom,4814,US,good
+801,Lakeside ATM,atm,6011,US,good
+802,Willow Rideshare,transit,4111,US,good
+803,Vintage Foods,grocery,5411,US,good
+804,Union Bank ATM,atm,6011,US,good
+805,Northgate Games,gaming,7995,US,good
+806,Brightline Electronics,electronics,5732,US,good
+807,Metro Clearwater,transit,4111,US,good
+808,Liberty Grill,restaurant,5812,US,good
+809,Evergreen Studios,gaming,7995,US,good
+810,Birch Telecom,telecom,4814,US,good
+811,Liberty Digital,electronics,5732,US,good
+812,Brookline Studios,gaming,7995,US,good
+813,Fairview ATM,atm,6011,US,good
+814,Liberty Kitchen,restaurant,5812,US,good
+815,Silver Studios,gaming,7995,US,good
+816,Riverside Cash Point,atm,6011,US,good
+817,Northgate Tech,electronics,5732,US,good
+818,Granite Telecom,telecom,4814,US,good
+819,Lakeside Wireless,telecom,4814,US,good
+820,Brookline Rideshare,transit,4111,US,good
+821,Liberty Goods,retail,5999,US,good
+822,Hillcrest Games,gaming,7995,US,good
+823,Metro Clearwater,transit,4111,US,good
+824,Beacon Mobile,telecom,4814,US,good
+825,Highland Transit,transit,4111,US,good
+826,Maple Grill,restaurant,5812,US,watch
+827,Harbor Connect,telecom,4814,US,good
+828,Crown Telecom,telecom,4814,US,good
+829,Crown Energy,fuel,5541,US,good
+830,Lakeside Cab Co,transit,4111,US,good
+831,Brookline Connect,telecom,4814,US,good
+832,Oakwood Telecom,telecom,4814,US,good
+833,Summit Cash Point,atm,6011,US,watch
+834,Oakwood & Co,retail,5999,US,good
+835,Riverside Grill,restaurant,5812,US,good
+836,Silver Grill,restaurant,5812,US,good
+837,Granite Supply Co,retail,5999,US,good
+838,Beacon Kitchen,restaurant,5812,US,good
+839,Ridgeway Bank ATM,atm,6011,US,good
+840,Pioneer & Co,retail,5999,US,good
+841,Silver Wireless,telecom,4814,US,good
+842,Vintage Games,gaming,7995,US,good
+843,Granite's,department_store,5311,US,good
+844,Brightline Supply Co,retail,5999,US,watch
+845,Highland Play,gaming,7995,US,good
+846,Ridgeway Gas & Go,fuel,5541,US,good
+847,Evergreen Energy,fuel,5541,US,good
+848,Beacon Energy,fuel,5541,US,good
+849,Vintage Studios,gaming,7995,US,good
+850,Riverside Fuel,fuel,5541,US,good
+851,Silver Gas & Go,fuel,5541,US,good
+852,Hillcrest Wireless,telecom,4814,US,good
+853,Vintage Market,grocery,5411,US,good
+854,Golden Wireless,telecom,4814,US,good
+855,Silver Grocery,grocery,5411,US,good
+856,Highland Cab Co,transit,4111,US,watch
+857,Cedar Market,grocery,5411,US,good
+858,Riverside Bank ATM,atm,6011,US,good
+859,House of Granite,department_store,5311,US,good
+860,Crown Foods,grocery,5411,US,good
+861,Harbor Mobile,telecom,4814,US,good
+862,Crown Transit,transit,4111,US,good
+863,Willow Cash Point,atm,6011,US,good
+864,Evergreen Digital,electronics,5732,US,good
+865,Cedar Petroleum,fuel,5541,US,good
+866,Hillcrest Kitchen,restaurant,5812,US,good
+867,Highland Cash Point,atm,6011,US,good
+868,Brightline Foods,grocery,5411,US,good
+869,Meadow & Sons,department_store,5311,US,good
+870,Union Bistro,restaurant,5812,US,good
+871,Fairview Bank ATM,atm,6011,US,good
+872,Vintage Grill,restaurant,5812,US,good
+873,Ridgeway Cash Point,atm,6011,US,good
+874,Golden Fresh Market,grocery,5411,US,good
+875,The Beacon Table,restaurant,5812,US,good
+876,Copper Wireless,telecom,4814,US,good
+877,Parkside & Sons,department_store,5311,US,good
+878,Brightline Transit,transit,4111,US,good
+879,Crown & Sons,department_store,5311,US,good
+880,Golden Market,grocery,5411,US,good
+881,Stonebridge Wireless,telecom,4814,US,good
+882,Hillcrest ATM,atm,6011,US,good
+883,Silver Audio,electronics,5732,US,good
+884,Pioneer Kitchen,restaurant,5812,US,good
+885,Crown Supply Co,retail,5999,US,good
+886,Willow Energy,fuel,5541,US,good
+887,Metro Highland,transit,4111,US,good
+888,Redwood Audio,electronics,5732,US,watch
+889,Birch Electronics,electronics,5732,US,good
+890,Fairview Fuel,fuel,5541,US,good
+891,Metro Evergreen,transit,4111,US,good
+892,Golden Market,grocery,5411,US,good
+893,Fairview Cab Co,transit,4111,US,good
+894,Ridgeway Goods,retail,5999,US,watch
+895,Meadow Foods,grocery,5411,US,good
+896,Copper Goods,retail,5999,US,good
+897,Anchor & Sons,department_store,5311,US,good
+898,Lakeside ATM,atm,6011,US,good
+899,Sunrise Mobile,telecom,4814,US,good
+900,Oakwood Audio,electronics,5732,US,good
+901,Granite Market,grocery,5411,US,good
+902,Liberty Goods,retail,5999,US,good
+903,Parkside Grill,restaurant,5812,US,good
+904,Stonebridge Fresh Market,grocery,5411,US,good
+905,Lakeside Electronics,electronics,5732,US,good
+906,Maple Outfitters,retail,5999,US,good
+907,Birch Play,gaming,7995,US,good
+908,Metro Anchor,transit,4111,US,good
+909,Stonebridge Tech,electronics,5732,US,good
+910,Fairview Bistro,restaurant,5812,US,good
+911,Clearwater Petroleum,fuel,5541,US,good
+912,Hillcrest Rideshare,transit,4111,US,good
+913,Ridgeway Fresh Market,grocery,5411,US,good
+914,Fairview Outfitters,retail,5999,US,good
+915,Parkside Telecom,telecom,4814,US,good
+916,Copper Kitchen,restaurant,5812,US,good
+917,Parkside Foods,grocery,5411,US,good
+918,Oakwood Wireless,telecom,4814,US,good
+919,Café Pioneer,restaurant,5812,US,good
+920,Aspen Wireless,telecom,4814,US,good
+921,Stonebridge Tech,electronics,5732,US,good
+922,Brookline Bank ATM,atm,6011,US,good
+923,Birch Cab Co,transit,4111,US,good
+924,Liberty Cab Co,transit,4111,US,good
+925,Maple Telecom,telecom,4814,US,good
+926,Oakwood Interactive,gaming,7995,US,good
+927,Harbor ATM,atm,6011,US,good
+928,Fairview Bistro,restaurant,5812,US,good
+929,Ridgeway Bank ATM,atm,6011,US,good
+930,Stonebridge Fresh Market,grocery,5411,US,good
+931,Oakwood Mobile,telecom,4814,US,good
+932,Lakeside Bank ATM,atm,6011,US,good
+933,Sunrise Petroleum,fuel,5541,US,good
+934,Pioneer Goods,retail,5999,US,good
+935,Redwood Fresh Market,grocery,5411,US,good
+936,Sunrise Energy,fuel,5541,US,good
+937,Beacon Games,gaming,7995,US,good
+938,Anchor Market,grocery,5411,US,good
+939,House of Willow,department_store,5311,US,good
+940,Café Beacon,restaurant,5812,US,good
+941,Birch Wireless,telecom,4814,US,good
+942,Golden Interactive,gaming,7995,US,good
+943,Meadow Gas & Go,fuel,5541,US,good
+944,Anchor Digital,electronics,5732,US,good
+945,Brookline Foods,grocery,5411,US,good
+946,Meadow & Co,retail,5999,US,good
+947,Riverside Connect,telecom,4814,US,good
+948,Evergreen Mobile,telecom,4814,US,good
+949,Redwood Studios,gaming,7995,US,good
+950,Maple Electronics,electronics,5732,US,good
+951,Brightline & Sons,department_store,5311,US,good
+952,Anchor Outfitters,retail,5999,US,good
+953,Metro Harbor,transit,4111,US,good
+954,Willow Outfitters,retail,5999,US,good
+955,House of Pioneer,department_store,5311,US,good
+956,Evergreen Cab Co,transit,4111,US,good
+957,Metro Willow,transit,4111,US,watch
+958,Evergreen Fuel,fuel,5541,US,good
+959,Birch Energy,fuel,5541,US,good
+960,Redwood & Co,retail,5999,US,good
+961,Harbor Market,grocery,5411,US,good
+962,House of Granite,department_store,5311,US,good
+963,Willow Petroleum,fuel,5541,US,good
+964,Meadow Kitchen,restaurant,5812,US,good
+965,Vintage Grocery,grocery,5411,US,good
+966,The Meadow Table,restaurant,5812,US,good
+967,Cedar Gas & Go,fuel,5541,US,good
+968,Crown Tech,electronics,5732,US,good
+969,Café Cedar,restaurant,5812,US,good
+970,Highland ATM,atm,6011,US,good
+971,Vintage Connect,telecom,4814,US,good
+972,Meadow & Co,retail,5999,US,watch
+973,House of Cedar,department_store,5311,US,good
+974,Anchor Cash Point,atm,6011,US,good
+975,Clearwater Telecom,telecom,4814,US,good
+976,Hillcrest Cab Co,transit,4111,US,good
+977,Ridgeway & Sons,department_store,5311,US,good
+978,Brightline Foods,grocery,5411,US,good
+979,Evergreen Cab Co,transit,4111,US,watch
+980,Anchor Mobile,telecom,4814,US,good
+981,Willow Rideshare,transit,4111,US,good
+982,Café Silver,restaurant,5812,US,good
+983,Brookline Grocery,grocery,5411,US,good
+984,Harbor Goods,retail,5999,US,good
+985,Parkside Interactive,gaming,7995,US,good
+986,Liberty Mobile,telecom,4814,US,good
+987,Maple Cash Point,atm,6011,US,good
+988,Hillcrest Fresh Market,grocery,5411,US,good
+989,Harbor Electronics,electronics,5732,US,good
+990,Aspen Grocery,grocery,5411,US,good
+991,Redwood Mobile,telecom,4814,US,good
+992,Anchor Electronics,electronics,5732,US,good
+993,Summit Fuel,fuel,5541,US,good
+994,Silver Transit,transit,4111,US,watch
+995,Café Golden,restaurant,5812,US,good
+996,Golden Cash Point,atm,6011,US,good
+997,Meadow Rideshare,transit,4111,US,good
+998,Brookline ATM,atm,6011,US,good
+999,Liberty Transit,transit,4111,US,good
+1000,Redwood's,department_store,5311,US,good
+1001,Sunrise Tech,electronics,5732,US,good
+1002,Metro Sunrise,transit,4111,US,good
+1003,Brookline Wireless,telecom,4814,US,good
+1004,Redwood Transit,transit,4111,US,good
+1005,Evergreen Cab Co,transit,4111,US,good
+1006,Copper Supply Co,retail,5999,US,good
+1007,Metro Vintage,transit,4111,US,good
+1008,Cedar Play,gaming,7995,US,good
+1009,Brightline Electronics,electronics,5732,US,good
+1010,Birch Cash Point,atm,6011,US,good
+1011,Cedar Games,gaming,7995,US,good
+1012,Pioneer Petroleum,fuel,5541,US,good
+1013,Aspen Connect,telecom,4814,US,good
+1014,Crown Department Store,department_store,5311,US,good
+1015,Vintage Bistro,restaurant,5812,US,good
+1016,Brookline Grill,restaurant,5812,US,good
+1017,House of Golden,department_store,5311,US,good
+1018,Fairview Fresh Market,grocery,5411,US,good
+1019,Parkside Play,gaming,7995,US,good
+1020,Brightline Supply Co,retail,5999,US,good
+1021,Ridgeway Energy,fuel,5541,US,good
+1022,Liberty Foods,grocery,5411,US,good
+1023,Hillcrest Audio,electronics,5732,US,good
+1024,Hillcrest Telecom,telecom,4814,US,good
+1025,Copper Cash Point,atm,6011,US,good
+1026,House of Birch,department_store,5311,US,watch
+1027,Northgate & Sons,department_store,5311,US,good
+1028,Stonebridge Department Store,department_store,5311,US,good
+1029,Redwood Department Store,department_store,5311,US,good
+1030,Northgate Connect,telecom,4814,US,good
+1031,Clearwater Connect,telecom,4814,US,good
+1032,Vintage Supply Co,retail,5999,US,good
+1033,Summit & Co,retail,5999,US,good
+1034,Maple Goods,retail,5999,US,good
+1035,Beacon Fuel,fuel,5541,US,good
+1036,Birch Mobile,telecom,4814,US,good
+1037,Metro Hillcrest,transit,4111,US,good
+1038,Lakeside Transit,transit,4111,US,good
+1039,Liberty Energy,fuel,5541,US,good
+1040,Ridgeway Telecom,telecom,4814,US,good
+1041,Meadow Play,gaming,7995,US,good
+1042,Parkside Outfitters,retail,5999,US,good
+1043,Maple Grocery,grocery,5411,US,good
+1044,Silver ATM,atm,6011,US,good
+1045,Stonebridge Gas & Go,fuel,5541,US,good
+1046,Clearwater Tech,electronics,5732,US,good
+1047,House of Oakwood,department_store,5311,US,good
+1048,Riverside Games,gaming,7995,US,good
+1049,Silver Fuel,fuel,5541,US,good
+1050,Brookline Grill,restaurant,5812,US,good
+1051,Anchor & Co,retail,5999,US,good
+1052,Copper Wireless,telecom,4814,US,good
+1053,Maple Grill,restaurant,5812,US,good
+1054,Café Silver,restaurant,5812,US,good
+1055,Parkside Outfitters,retail,5999,US,good
+1056,Birch Interactive,gaming,7995,US,good
+1057,Redwood Supply Co,retail,5999,US,good
+1058,Crown Cab Co,transit,4111,US,good
+1059,Aspen's,department_store,5311,US,good
+1060,Lakeside Fresh Market,grocery,5411,US,good
+1061,Café Maple,restaurant,5812,US,good
+1062,Riverside Mobile,telecom,4814,US,good
+1063,Maple Tech,electronics,5732,US,good
+1064,Granite's,department_store,5311,US,good
+1065,Maple Electronics,electronics,5732,US,good
+1066,Parkside Grocery,grocery,5411,US,good
+1067,Clearwater Telecom,telecom,4814,US,good
+1068,Copper Studios,gaming,7995,US,good
+1069,Golden Cash Point,atm,6011,US,good
+1070,Vintage & Sons,department_store,5311,US,good
+1071,Union Gas & Go,fuel,5541,US,good
+1072,Anchor Play,gaming,7995,US,good
+1073,Maple Transit,transit,4111,US,good
+1074,Lakeside Department Store,department_store,5311,US,good
+1075,Golden Play,gaming,7995,US,good
+1076,Silver Telecom,telecom,4814,US,good
+1077,Evergreen Goods,retail,5999,US,good
+1078,Maple Cash Point,atm,6011,US,good
+1079,Redwood Bistro,restaurant,5812,US,good
+1080,Ridgeway Fresh Market,grocery,5411,US,good
+1081,Vintage Market,grocery,5411,US,good
+1082,Brookline ATM,atm,6011,US,good
+1083,Café Birch,restaurant,5812,US,good
+1084,Northgate Grill,restaurant,5812,US,good
+1085,Liberty ATM,atm,6011,US,good
+1086,House of Granite,department_store,5311,US,good
+1087,Stonebridge Cash Point,atm,6011,US,good
+1088,Brookline Audio,electronics,5732,US,good
+1089,Oakwood Digital,electronics,5732,US,good
+1090,The Anchor Table,restaurant,5812,US,good
+1091,Parkside ATM,atm,6011,US,good
+1092,Maple Grocery,grocery,5411,US,good
+1093,Beacon Grocery,grocery,5411,US,good
+1094,Union's,department_store,5311,US,good
+1095,Meadow Play,gaming,7995,US,good
+1096,Granite Digital,electronics,5732,US,good
+1097,Vintage Wireless,telecom,4814,US,good
+1098,Fairview Tech,electronics,5732,US,good
+1099,Liberty Games,gaming,7995,US,good
+1100,Beacon Play,gaming,7995,US,good
+1101,Oakwood Studios,gaming,7995,US,good
+1102,Birch Digital,electronics,5732,US,good
+1103,Copper Goods,retail,5999,US,good
+1104,Ridgeway Telecom,telecom,4814,US,good
+1105,Northgate Digital,electronics,5732,US,watch
+1106,Hillcrest Bistro,restaurant,5812,US,good
+1107,Stonebridge Gas & Go,fuel,5541,US,good
+1108,Beacon Games,gaming,7995,US,good
+1109,Pioneer Cash Point,atm,6011,US,good
+1110,The Liberty Table,restaurant,5812,US,good
+1111,Brightline Wireless,telecom,4814,US,good
+1112,Harbor Fresh Market,grocery,5411,US,good
+1113,Oakwood Connect,telecom,4814,US,watch
+1114,Liberty Audio,electronics,5732,US,good
+1115,Redwood Gas & Go,fuel,5541,US,good
+1116,Golden Bank ATM,atm,6011,US,good
+1117,Maple Grocery,grocery,5411,US,good
+1118,Highland Connect,telecom,4814,US,good
+1119,Harbor Mobile,telecom,4814,US,good
+1120,Parkside Bistro,restaurant,5812,US,good
+1121,The Highland Table,restaurant,5812,US,good
+1122,Clearwater ATM,atm,6011,US,good
+1123,Aspen Audio,electronics,5732,US,watch
+1124,Copper Gas & Go,fuel,5541,US,good
+1125,Hillcrest Outfitters,retail,5999,US,good
+1126,Maple Bank ATM,atm,6011,US,good
+1127,Redwood Interactive,gaming,7995,US,good
+1128,Brookline Tech,electronics,5732,US,good
+1129,Liberty Supply Co,retail,5999,US,good
+1130,The Pioneer Table,restaurant,5812,US,good
+1131,Meadow Wireless,telecom,4814,US,good
+1132,Silver Telecom,telecom,4814,US,watch
+1133,Brookline Grocery,grocery,5411,US,good
+1134,Evergreen Kitchen,restaurant,5812,US,good
+1135,Summit Rideshare,transit,4111,US,good
+1136,Brookline Studios,gaming,7995,US,good
+1137,Beacon Studios,gaming,7995,US,good
+1138,Brookline Fresh Market,grocery,5411,US,watch
+1139,Metro Clearwater,transit,4111,US,good
+1140,Redwood Grocery,grocery,5411,US,good
+1141,Metro Union,transit,4111,US,good
+1142,Birch Connect,telecom,4814,US,good
+1143,Vintage Outfitters,retail,5999,US,good
+1144,Beacon ATM,atm,6011,US,good
+1145,Willow Interactive,gaming,7995,US,good
+1146,Silver Energy,fuel,5541,US,good
+1147,Anchor Petroleum,fuel,5541,US,good
+1148,Café Stonebridge,restaurant,5812,US,good
+1149,House of Aspen,department_store,5311,US,good
+1150,Maple Fuel,fuel,5541,US,good
+1151,Evergreen Gas & Go,fuel,5541,US,good
+1152,Union Electronics,electronics,5732,US,good
+1153,Crown Grocery,grocery,5411,US,good
+1154,Copper Gas & Go,fuel,5541,US,good
+1155,Birch Supply Co,retail,5999,US,good
+1156,Northgate Energy,fuel,5541,US,good
+1157,Beacon Mobile,telecom,4814,US,good
+1158,Clearwater Games,gaming,7995,US,good
+1159,Evergreen Grill,restaurant,5812,US,good
+1160,Clearwater Grill,restaurant,5812,US,good
+1161,Fairview Foods,grocery,5411,US,good
+1162,Pioneer Department Store,department_store,5311,US,good
+1163,Liberty Petroleum,fuel,5541,US,good
+1164,Copper Gas & Go,fuel,5541,US,good
+1165,Silver's,department_store,5311,US,good
+1166,Cedar Gas & Go,fuel,5541,US,good
+1167,Oakwood Petroleum,fuel,5541,US,good
+1168,Willow Kitchen,restaurant,5812,US,good
+1169,Anchor Kitchen,restaurant,5812,US,good
+1170,Parkside & Sons,department_store,5311,US,good
+1171,Parkside Bank ATM,atm,6011,US,good
+1172,Maple Energy,fuel,5541,US,watch
+1173,Hillcrest Fresh Market,grocery,5411,US,good
+1174,Birch Studios,gaming,7995,US,good
+1175,Birch Cash Point,atm,6011,US,good
+1176,Brightline Audio,electronics,5732,US,good
+1177,Cedar & Sons,department_store,5311,US,good
+1178,Beacon Bank ATM,atm,6011,US,good
+1179,Silver Connect,telecom,4814,US,good
+1180,Pioneer's,department_store,5311,US,good
+1181,Lakeside Wireless,telecom,4814,US,good
+1182,Redwood Outfitters,retail,5999,US,good
+1183,Parkside Audio,electronics,5732,US,good
+1184,Crown Wireless,telecom,4814,US,good
+1185,Summit Games,gaming,7995,US,good
+1186,Riverside Cab Co,transit,4111,US,good
+1187,Redwood Kitchen,restaurant,5812,US,good
+1188,Meadow Digital,electronics,5732,US,good
+1189,Brookline Rideshare,transit,4111,US,good
+1190,Harbor Bank ATM,atm,6011,US,good
+1191,Willow Telecom,telecom,4814,US,good
+1192,Aspen Bistro,restaurant,5812,US,good
+1193,Hillcrest Bank ATM,atm,6011,US,good
+1194,Aspen Play,gaming,7995,US,good
+1195,Lakeside & Co,retail,5999,US,good
+1196,Sunrise Wireless,telecom,4814,US,good
+1197,Ridgeway Fresh Market,grocery,5411,US,good
+1198,Café Vintage,restaurant,5812,US,good
+1199,Ridgeway Department Store,department_store,5311,US,good
+1200,Northgate Wireless,telecom,4814,US,good
+1201,Sunrise & Co,retail,5999,US,bad
+1202,Birch ATM,atm,6011,US,good
+1203,Metro Northgate,transit,4111,US,watch
+1204,Granite Cab Co,transit,4111,US,good
+1205,Fairview Grocery,grocery,5411,US,good
+1206,The Union Table,restaurant,5812,US,good
+1207,Willow Supply Co,retail,5999,US,good
+1208,Sunrise Kitchen,restaurant,5812,US,good
+1209,Brightline Electronics,electronics,5732,US,good
+1210,Brightline Energy,fuel,5541,US,good
+1211,Harbor Kitchen,restaurant,5812,US,good
+1212,Highland Kitchen,restaurant,5812,US,good
+1213,Copper Gas & Go,fuel,5541,US,good
+1214,Silver Fuel,fuel,5541,US,good
+1215,Cedar Gas & Go,fuel,5541,US,good
+1216,Meadow Grocery,grocery,5411,US,good
+1217,Pioneer Studios,gaming,7995,US,good
+1218,Hillcrest Interactive,gaming,7995,US,good
+1219,Brookline Goods,retail,5999,US,good
+1220,Silver Gas & Go,fuel,5541,US,good
+1221,House of Union,department_store,5311,US,good
+1222,Oakwood Supply Co,retail,5999,US,good
+1223,Lakeside Digital,electronics,5732,US,good
+1224,Brookline Electronics,electronics,5732,US,good
+1225,Brookline Digital,electronics,5732,US,good
+1226,Beacon Mobile,telecom,4814,US,good
+1227,Clearwater Petroleum,fuel,5541,US,good
+1228,Oakwood Rideshare,transit,4111,US,good
+1229,Northgate Connect,telecom,4814,US,good
+1230,Hillcrest Audio,electronics,5732,US,good
+1231,Redwood's,department_store,5311,US,good
+1232,Granite Department Store,department_store,5311,US,good
+1233,Granite Fresh Market,grocery,5411,US,good
+1234,Café Ridgeway,restaurant,5812,US,good
+1235,Hillcrest Bistro,restaurant,5812,US,good
+1236,Riverside Digital,electronics,5732,US,good
+1237,Liberty Games,gaming,7995,US,good
+1238,Summit's,department_store,5311,US,good
+1239,Café Highland,restaurant,5812,US,good
+1240,The Evergreen Table,restaurant,5812,US,good
+1241,Copper Outfitters,retail,5999,US,watch
+1242,Summit Bank ATM,atm,6011,US,good
+1243,Lakeside Cash Point,atm,6011,US,good
+1244,Birch Wireless,telecom,4814,US,watch
+1245,Pioneer Fuel,fuel,5541,US,good
+1246,Hillcrest Interactive,gaming,7995,US,good
+1247,Evergreen Fresh Market,grocery,5411,US,good
+1248,Metro Brightline,transit,4111,US,good
+1249,Ridgeway Bistro,restaurant,5812,US,good
+1250,Lakeside Market,grocery,5411,US,good
+1251,Café Sunrise,restaurant,5812,US,good
+1252,Maple Mobile,telecom,4814,US,good
+1253,Liberty Transit,transit,4111,US,good
+1254,Granite Transit,transit,4111,US,good
+1255,Brightline Market,grocery,5411,US,good
+1256,Beacon's,department_store,5311,US,good
+1257,Pioneer Supply Co,retail,5999,US,watch
+1258,Beacon Mobile,telecom,4814,US,good
+1259,Lakeside Fresh Market,grocery,5411,US,good
+1260,Beacon Mobile,telecom,4814,US,good
+1261,Golden Bank ATM,atm,6011,US,good
+1262,Clearwater Bank ATM,atm,6011,US,good
+1263,Maple Play,gaming,7995,US,good
+1264,Birch ATM,atm,6011,US,good
+1265,Silver Cash Point,atm,6011,US,good
+1266,Crown Tech,electronics,5732,US,good
+1267,Highland Cash Point,atm,6011,US,good
+1268,Golden Play,gaming,7995,US,good
+1269,Beacon Games,gaming,7995,US,good
+1270,Harbor Grill,restaurant,5812,US,good
+1271,Beacon Tech,electronics,5732,US,good
+1272,Clearwater Outfitters,retail,5999,US,good
+1273,Hillcrest Supply Co,retail,5999,US,good
+1274,Vintage Rideshare,transit,4111,US,good
+1275,Golden Digital,electronics,5732,US,watch
+1276,Highland Games,gaming,7995,US,good
+1277,Clearwater Studios,gaming,7995,US,good
+1278,Aspen Cab Co,transit,4111,US,good
+1279,Ridgeway Transit,transit,4111,US,good
+1280,Oakwood Foods,grocery,5411,US,good
+1281,Northgate Kitchen,restaurant,5812,US,good
+1282,Union Telecom,telecom,4814,US,good
+1283,Beacon Supply Co,retail,5999,US,good
+1284,Aspen's,department_store,5311,US,good
+1285,Redwood Fuel,fuel,5541,US,good
+1286,Oakwood Cash Point,atm,6011,US,good
+1287,Fairview Digital,electronics,5732,US,good
+1288,Aspen Supply Co,retail,5999,US,good
+1289,Willow Cash Point,atm,6011,US,good
+1290,Stonebridge Cab Co,transit,4111,US,good
+1291,Brookline Games,gaming,7995,US,good
+1292,House of Golden,department_store,5311,US,good
+1293,Brightline Fuel,fuel,5541,US,good
+1294,Northgate ATM,atm,6011,US,good
+1295,Sunrise Energy,fuel,5541,US,good
+1296,Meadow Energy,fuel,5541,US,good
+1297,The Pioneer Table,restaurant,5812,US,good
+1298,Union Connect,telecom,4814,US,bad
+1299,Oakwood Telecom,telecom,4814,US,good
+1300,Riverside Grill,restaurant,5812,US,good
+1301,Maple ATM,atm,6011,US,good
+1302,Redwood Gas & Go,fuel,5541,US,watch
+1303,Golden Foods,grocery,5411,US,good
+1304,Crown Telecom,telecom,4814,US,good
+1305,Fairview Games,gaming,7995,US,good
+1306,Sunrise Wireless,telecom,4814,US,good
+1307,Hillcrest Bank ATM,atm,6011,US,good
+1308,Clearwater Cash Point,atm,6011,US,good
+1309,Lakeside Play,gaming,7995,US,good
+1310,Brookline Bank ATM,atm,6011,US,good
+1311,Harbor ATM,atm,6011,US,good
+1312,Hillcrest Mobile,telecom,4814,US,good
+1313,Parkside Electronics,electronics,5732,US,good
+1314,Granite Connect,telecom,4814,US,good
+1315,Lakeside Grocery,grocery,5411,US,good
+1316,Vintage Energy,fuel,5541,US,good
+1317,Birch & Sons,department_store,5311,US,good
+1318,Clearwater ATM,atm,6011,US,good
+1319,Cedar Foods,grocery,5411,US,good
+1320,Vintage Studios,gaming,7995,US,good
+1321,Evergreen & Co,retail,5999,US,good
+1322,Pioneer Kitchen,restaurant,5812,US,watch
+1323,Clearwater Electronics,electronics,5732,US,good
+1324,Golden Department Store,department_store,5311,US,good
+1325,Redwood Outfitters,retail,5999,US,good
+1326,Copper Telecom,telecom,4814,US,good
+1327,Northgate Foods,grocery,5411,US,good
+1328,Cedar Tech,electronics,5732,US,good
+1329,Highland Wireless,telecom,4814,US,good
+1330,Redwood Telecom,telecom,4814,US,good
+1331,Clearwater Audio,electronics,5732,US,good
+1332,Brightline Gas & Go,fuel,5541,US,good
+1333,Lakeside Tech,electronics,5732,US,good
+1334,Ridgeway's,department_store,5311,US,good
+1335,Golden Mobile,telecom,4814,US,good
+1336,Birch Digital,electronics,5732,US,good
+1337,Liberty Wireless,telecom,4814,US,good
+1338,Birch Electronics,electronics,5732,US,good
+1339,Clearwater Games,gaming,7995,US,good
+1340,Stonebridge Tech,electronics,5732,US,good
+1341,Anchor Connect,telecom,4814,US,good
+1342,Redwood Telecom,telecom,4814,US,good
+1343,Brightline Grocery,grocery,5411,US,good
+1344,Northgate Games,gaming,7995,US,good
+1345,Cedar Department Store,department_store,5311,US,good
+1346,Stonebridge Transit,transit,4111,US,good
+1347,Brookline Supply Co,retail,5999,US,bad
+1348,Maple Electronics,electronics,5732,US,good
+1349,Silver ATM,atm,6011,US,good
+1350,Meadow Cash Point,atm,6011,US,good
+1351,Fairview Electronics,electronics,5732,US,good
+1352,Brightline Bistro,restaurant,5812,US,good
+1353,Lakeside & Sons,department_store,5311,US,good
+1354,Brookline Goods,retail,5999,US,good
+1355,Maple Energy,fuel,5541,US,good
+1356,Liberty Outfitters,retail,5999,US,good
+1357,Riverside Play,gaming,7995,US,good
+1358,Redwood & Sons,department_store,5311,US,good
+1359,Vintage Grocery,grocery,5411,US,good
+1360,Sunrise Market,grocery,5411,US,good
+1361,Northgate Cash Point,atm,6011,US,good
+1362,Beacon Transit,transit,4111,US,good
+1363,Meadow Goods,retail,5999,US,good
+1364,Crown & Sons,department_store,5311,US,good
+1365,Parkside Fuel,fuel,5541,US,good
+1366,Redwood Department Store,department_store,5311,US,good
+1367,Brightline Cab Co,transit,4111,US,good
+1368,Summit Supply Co,retail,5999,US,good
+1369,Anchor Audio,electronics,5732,US,good
+1370,Fairview Cab Co,transit,4111,US,good
+1371,Evergreen Outfitters,retail,5999,US,good
+1372,Beacon Tech,electronics,5732,US,good
+1373,Riverside Mobile,telecom,4814,US,good
+1374,House of Liberty,department_store,5311,US,good
+1375,Cedar Energy,fuel,5541,US,good
+1376,Willow & Sons,department_store,5311,US,good
+1377,Meadow Games,gaming,7995,US,good
+1378,Oakwood Telecom,telecom,4814,US,good
+1379,Meadow Wireless,telecom,4814,US,good
+1380,Silver Wireless,telecom,4814,US,good
+1381,Willow Games,gaming,7995,US,good
+1382,Meadow Kitchen,restaurant,5812,US,good
+1383,Maple Petroleum,fuel,5541,US,good
+1384,Aspen Fuel,fuel,5541,US,good
+1385,Lakeside Rideshare,transit,4111,US,good
+1386,Golden Games,gaming,7995,US,good
+1387,Cedar Wireless,telecom,4814,US,good
+1388,Summit Studios,gaming,7995,US,good
+1389,Crown Digital,electronics,5732,US,good
+1390,Golden's,department_store,5311,US,good
+1391,Liberty Interactive,gaming,7995,US,good
+1392,Granite's,department_store,5311,US,good
+1393,Highland Market,grocery,5411,US,good
+1394,Oakwood Audio,electronics,5732,US,good
+1395,Sunrise Grocery,grocery,5411,US,good
+1396,House of Fairview,department_store,5311,US,good
+1397,Brightline Grocery,grocery,5411,US,good
+1398,Hillcrest Games,gaming,7995,US,good
+1399,Ridgeway Digital,electronics,5732,US,good
+1400,Fairview Foods,grocery,5411,US,good
+1401,Copper Energy,fuel,5541,US,good
+1402,Stonebridge Gas & Go,fuel,5541,US,good
+1403,Stonebridge Bistro,restaurant,5812,US,good
+1404,Brightline's,department_store,5311,US,watch
+1405,Granite Tech,electronics,5732,US,good
+1406,Meadow Studios,gaming,7995,US,good
+1407,Birch Mobile,telecom,4814,US,good
+1408,Ridgeway Foods,grocery,5411,US,good
+1409,Maple Cab Co,transit,4111,US,watch
+1410,Clearwater Connect,telecom,4814,US,good
+1411,Aspen Gas & Go,fuel,5541,US,good
+1412,Fairview Transit,transit,4111,US,good
+1413,Summit Petroleum,fuel,5541,US,good
+1414,Birch Bank ATM,atm,6011,US,good
+1415,Summit Goods,retail,5999,US,good
+1416,Lakeside Interactive,gaming,7995,US,good
+1417,Maple's,department_store,5311,US,good
+1418,Vintage Connect,telecom,4814,US,good
+1419,Birch Games,gaming,7995,US,good
+1420,Redwood Petroleum,fuel,5541,US,good
+1421,Sunrise Connect,telecom,4814,US,good
+1422,Vintage Telecom,telecom,4814,US,good
+1423,Riverside Bank ATM,atm,6011,US,good
+1424,Northgate Wireless,telecom,4814,US,good
+1425,Summit Fresh Market,grocery,5411,US,good
+1426,Northgate Tech,electronics,5732,US,good
+1427,House of Anchor,department_store,5311,US,good
+1428,Northgate Gas & Go,fuel,5541,US,good
+1429,Redwood Outfitters,retail,5999,US,good
+1430,Ridgeway Petroleum,fuel,5541,US,good
+1431,Parkside ATM,atm,6011,US,good
+1432,Liberty Outfitters,retail,5999,US,watch
+1433,Golden Kitchen,restaurant,5812,US,good
+1434,Crown Interactive,gaming,7995,US,good
+1435,Riverside Digital,electronics,5732,US,good
+1436,Birch Department Store,department_store,5311,US,good
+1437,Birch Energy,fuel,5541,US,good
+1438,Lakeside & Sons,department_store,5311,US,good
+1439,Willow ATM,atm,6011,US,good
+1440,Highland Goods,retail,5999,US,good
+1441,Oakwood Energy,fuel,5541,US,good
+1442,Meadow Supply Co,retail,5999,US,good
+1443,Sunrise Rideshare,transit,4111,US,good
+1444,Summit Games,gaming,7995,US,good
+1445,House of Summit,department_store,5311,US,good
+1446,Sunrise Rideshare,transit,4111,US,good
+1447,Silver Bank ATM,atm,6011,US,good
+1448,Redwood Goods,retail,5999,US,good
+1449,Parkside Grocery,grocery,5411,US,good
+1450,Crown Wireless,telecom,4814,US,good
+1451,Willow Fuel,fuel,5541,US,good
+1452,Liberty Games,gaming,7995,US,good
+1453,Maple Supply Co,retail,5999,US,good
+1454,Beacon Market,grocery,5411,US,good
+1455,Anchor Energy,fuel,5541,US,good
+1456,Brookline Rideshare,transit,4111,US,good
+1457,Union Connect,telecom,4814,US,good
+1458,Evergreen Bank ATM,atm,6011,US,good
+1459,House of Ridgeway,department_store,5311,US,good
+1460,Golden Fresh Market,grocery,5411,US,watch
+1461,Highland Grocery,grocery,5411,US,good
+1462,House of Anchor,department_store,5311,US,good
+1463,Anchor Fuel,fuel,5541,US,good
+1464,Redwood Cash Point,atm,6011,US,good
+1465,Crown Digital,electronics,5732,US,good
+1466,Hillcrest Outfitters,retail,5999,US,good
+1467,Highland Mobile,telecom,4814,US,good
+1468,House of Silver,department_store,5311,US,good
+1469,Harbor Kitchen,restaurant,5812,US,good
+1470,Cedar Bank ATM,atm,6011,US,good
+1471,Maple Grocery,grocery,5411,US,good
+1472,Birch Fresh Market,grocery,5411,US,good
+1473,Granite Games,gaming,7995,US,good
+1474,Highland Interactive,gaming,7995,US,good
+1475,Birch Electronics,electronics,5732,US,good
+1476,Vintage Connect,telecom,4814,US,good
+1477,Pioneer Bistro,restaurant,5812,US,good
+1478,Anchor ATM,atm,6011,US,good
+1479,Copper Telecom,telecom,4814,US,good
+1480,Brookline Tech,electronics,5732,US,good
+1481,Liberty Games,gaming,7995,US,good
+1482,Pioneer Electronics,electronics,5732,US,good
+1483,Summit Play,gaming,7995,US,good
+1484,Union Department Store,department_store,5311,US,good
+1485,Brookline Fuel,fuel,5541,US,good
+1486,Harbor's,department_store,5311,US,good
+1487,Vintage Cab Co,transit,4111,US,good
+1488,Union Goods,retail,5999,US,good
+1489,Copper Play,gaming,7995,US,good
+1490,Maple Audio,electronics,5732,US,watch
+1491,Vintage Bank ATM,atm,6011,US,good
+1492,Northgate Audio,electronics,5732,US,good
+1493,Northgate Cab Co,transit,4111,US,watch
+1494,Ridgeway Kitchen,restaurant,5812,US,good
+1495,Brookline Petroleum,fuel,5541,US,good
+1496,Stonebridge Play,gaming,7995,US,good
+1497,Willow Fresh Market,grocery,5411,US,good
+1498,House of Sunrise,department_store,5311,US,good
+1499,Pioneer Bistro,restaurant,5812,US,good
+1500,Lakeside Interactive,gaming,7995,US,good
+1501,Fairview & Co,retail,5999,US,good
+1502,Stonebridge Grill,restaurant,5812,US,good
+1503,Redwood Play,gaming,7995,US,good
+1504,Cedar Digital,electronics,5732,US,good
+1505,Redwood Bank ATM,atm,6011,US,good
+1506,Cedar Bistro,restaurant,5812,US,good
+1507,Parkside Connect,telecom,4814,US,watch
+1508,Willow Connect,telecom,4814,US,watch
+1509,Crown Digital,electronics,5732,US,good
+1510,Lakeside Outfitters,retail,5999,US,good
+1511,Meadow Tech,electronics,5732,US,good
+1512,Brightline Foods,grocery,5411,US,good
+1513,Hillcrest Grocery,grocery,5411,US,good
+1514,Metro Hillcrest,transit,4111,US,good
+1515,Anchor Telecom,telecom,4814,US,good
+1516,Riverside Games,gaming,7995,US,good
+1517,Highland Mobile,telecom,4814,US,good
+1518,House of Hillcrest,department_store,5311,US,good
+1519,Meadow Bistro,restaurant,5812,US,watch
+1520,Crown Games,gaming,7995,US,good
+1521,Crown Cash Point,atm,6011,US,good
+1522,House of Fairview,department_store,5311,US,good
+1523,Northgate ATM,atm,6011,US,good
+1524,Parkside Cash Point,atm,6011,US,good
+1525,Ridgeway Mobile,telecom,4814,US,good
+1526,Northgate Telecom,telecom,4814,US,good
+1527,Crown Telecom,telecom,4814,US,good
+1528,Ridgeway Electronics,electronics,5732,US,good
+1529,Crown Transit,transit,4111,US,good
+1530,Granite Rideshare,transit,4111,US,good
+1531,Northgate Games,gaming,7995,US,good
+1532,Golden Outfitters,retail,5999,US,good
+1533,Oakwood Cab Co,transit,4111,US,good
+1534,Brightline ATM,atm,6011,US,bad
+1535,Copper's,department_store,5311,US,good
+1536,Meadow Play,gaming,7995,US,good
+1537,Pioneer Grill,restaurant,5812,US,good
+1538,Oakwood Petroleum,fuel,5541,US,good
+1539,Brightline Transit,transit,4111,US,good
+1540,Meadow Cab Co,transit,4111,US,good
+1541,Cedar Play,gaming,7995,US,good
+1542,House of Maple,department_store,5311,US,good
+1543,Northgate Digital,electronics,5732,US,good
+1544,Union Petroleum,fuel,5541,US,good
+1545,Silver Market,grocery,5411,US,good
+1546,Meadow Electronics,electronics,5732,US,good
+1547,Maple Rideshare,transit,4111,US,good
+1548,Harbor Cab Co,transit,4111,US,good
+1549,Summit Cash Point,atm,6011,US,good
+1550,Anchor Telecom,telecom,4814,US,bad
+1551,Summit Cab Co,transit,4111,US,good
+1552,Harbor Department Store,department_store,5311,US,good
+1553,Northgate Petroleum,fuel,5541,US,good
+1554,Clearwater ATM,atm,6011,US,good
+1555,Highland Energy,fuel,5541,US,good
+1556,Lakeside Tech,electronics,5732,US,good
+1557,Maple Bank ATM,atm,6011,US,good
+1558,Liberty Gas & Go,fuel,5541,US,good
+1559,Granite Market,grocery,5411,US,good
+1560,Granite Transit,transit,4111,US,good
+1561,Parkside Studios,gaming,7995,US,good
+1562,Copper & Co,retail,5999,US,good
+1563,Brookline Fuel,fuel,5541,US,good
+1564,Metro Evergreen,transit,4111,US,good
+1565,Ridgeway Bank ATM,atm,6011,US,good
+1566,Union Studios,gaming,7995,US,good
+1567,Summit Fuel,fuel,5541,US,good
+1568,House of Fairview,department_store,5311,US,good
+1569,Harbor Wireless,telecom,4814,US,good
+1570,Metro Anchor,transit,4111,US,good
+1571,Willow Cash Point,atm,6011,US,good
+1572,Birch Digital,electronics,5732,US,good
+1573,Harbor Digital,electronics,5732,US,good
+1574,Meadow Play,gaming,7995,US,good
+1575,Parkside Foods,grocery,5411,US,good
+1576,Clearwater Cab Co,transit,4111,US,good
+1577,House of Vintage,department_store,5311,US,good
+1578,House of Pioneer,department_store,5311,US,bad
+1579,Anchor Kitchen,restaurant,5812,US,good
+1580,Brookline Cab Co,transit,4111,US,good
+1581,Copper Interactive,gaming,7995,US,good
+1582,Harbor's,department_store,5311,US,good
+1583,Brookline & Sons,department_store,5311,US,good
+1584,House of Vintage,department_store,5311,US,good
+1585,Lakeside Supply Co,retail,5999,US,good
+1586,Copper Rideshare,transit,4111,US,good
+1587,Vintage Outfitters,retail,5999,US,watch
+1588,Parkside Connect,telecom,4814,US,good
+1589,Silver's,department_store,5311,US,good
+1590,Copper Outfitters,retail,5999,US,good
+1591,Birch Electronics,electronics,5732,US,good
+1592,Evergreen & Sons,department_store,5311,US,good
+1593,Harbor Bank ATM,atm,6011,US,good
+1594,Northgate Electronics,electronics,5732,US,good
+1595,Sunrise Market,grocery,5411,US,good
+1596,Evergreen & Co,retail,5999,US,good
+1597,Riverside Market,grocery,5411,US,good
+1598,Liberty Cash Point,atm,6011,US,good
+1599,Hillcrest Bank ATM,atm,6011,US,good
+1600,The Stonebridge Table,restaurant,5812,US,good
+1601,Brookline Supply Co,retail,5999,US,good
+1602,Silver Department Store,department_store,5311,US,good
+1603,Meadow Tech,electronics,5732,US,good
+1604,The Crown Table,restaurant,5812,US,good
+1605,Maple Market,grocery,5411,US,good
+1606,Ridgeway Audio,electronics,5732,US,bad
+1607,Birch Fuel,fuel,5541,US,good
+1608,Redwood Supply Co,retail,5999,US,good
+1609,Copper Telecom,telecom,4814,US,good
+1610,Brightline Transit,transit,4111,US,good
+1611,Meadow Bank ATM,atm,6011,US,good
+1612,Lakeside Fuel,fuel,5541,US,good
+1613,Lakeside Games,gaming,7995,US,good
+1614,Hillcrest Petroleum,fuel,5541,US,good
+1615,Oakwood Outfitters,retail,5999,US,good
+1616,Copper Grocery,grocery,5411,US,good
+1617,Evergreen Games,gaming,7995,US,good
+1618,Liberty Bistro,restaurant,5812,US,good
+1619,Clearwater Energy,fuel,5541,US,good
+1620,House of Northgate,department_store,5311,US,good
+1621,House of Aspen,department_store,5311,US,good
+1622,Sunrise & Co,retail,5999,US,good
+1623,Summit Grocery,grocery,5411,US,good
+1624,Northgate Wireless,telecom,4814,US,good
+1625,Beacon Transit,transit,4111,US,watch
+1626,Willow Mobile,telecom,4814,US,good
+1627,Lakeside Tech,electronics,5732,US,good
+1628,The Golden Table,restaurant,5812,US,good
+1629,Clearwater Transit,transit,4111,US,good
+1630,Willow Fresh Market,grocery,5411,US,good
+1631,Vintage Petroleum,fuel,5541,US,good
+1632,Pioneer Studios,gaming,7995,US,good
+1633,Golden Interactive,gaming,7995,US,good
+1634,Sunrise Energy,fuel,5541,US,good
+1635,Beacon Gas & Go,fuel,5541,US,good
+1636,Clearwater Petroleum,fuel,5541,US,good
+1637,Pioneer & Co,retail,5999,US,good
+1638,Vintage Cab Co,transit,4111,US,good
+1639,Riverside ATM,atm,6011,US,good
+1640,Ridgeway Wireless,telecom,4814,US,good
+1641,Maple Cash Point,atm,6011,US,good
+1642,Liberty Connect,telecom,4814,US,good
+1643,Birch Audio,electronics,5732,US,good
+1644,Meadow Tech,electronics,5732,US,good
+1645,Parkside Wireless,telecom,4814,US,good
+1646,Hillcrest Digital,electronics,5732,US,good
+1647,Union Fuel,fuel,5541,US,good
+1648,Liberty Telecom,telecom,4814,US,good
+1649,Café Parkside,restaurant,5812,US,good
+1650,Brookline Rideshare,transit,4111,US,good
+1651,Vintage Telecom,telecom,4814,US,good
+1652,Vintage Play,gaming,7995,US,good
+1653,Ridgeway Tech,electronics,5732,US,good
+1654,Stonebridge Goods,retail,5999,US,good
+1655,Sunrise Grill,restaurant,5812,US,good
+1656,Union Wireless,telecom,4814,US,good
+1657,Clearwater Rideshare,transit,4111,US,good
+1658,Northgate Games,gaming,7995,US,good
+1659,Cedar Goods,retail,5999,US,good
+1660,Ridgeway Bistro,restaurant,5812,US,good
+1661,Granite & Sons,department_store,5311,US,good
+1662,Brookline Audio,electronics,5732,US,good
+1663,Vintage's,department_store,5311,US,good
+1664,Riverside Gas & Go,fuel,5541,US,good
+1665,Northgate Fresh Market,grocery,5411,US,good
+1666,The Brightline Table,restaurant,5812,US,good
+1667,Fairview Kitchen,restaurant,5812,US,good
+1668,Copper's,department_store,5311,US,good
+1669,Summit Fuel,fuel,5541,US,good
+1670,Silver Cab Co,transit,4111,US,good
+1671,Granite Outfitters,retail,5999,US,good
+1672,Lakeside Mobile,telecom,4814,US,good
+1673,Cedar & Sons,department_store,5311,US,good
+1674,Metro Cedar,transit,4111,US,good
+1675,Café Liberty,restaurant,5812,US,good
+1676,Liberty Bistro,restaurant,5812,US,good
+1677,Hillcrest Department Store,department_store,5311,US,good
+1678,Oakwood Bank ATM,atm,6011,US,good
+1679,Willow Bank ATM,atm,6011,US,good
+1680,Golden Rideshare,transit,4111,US,good
+1681,Copper Outfitters,retail,5999,US,good
+1682,Stonebridge Games,gaming,7995,US,good
+1683,Metro Aspen,transit,4111,US,good
+1684,Clearwater ATM,atm,6011,US,good
+1685,Silver Petroleum,fuel,5541,US,good
+1686,Stonebridge Cab Co,transit,4111,US,good
+1687,Lakeside Tech,electronics,5732,US,good
+1688,Union Market,grocery,5411,US,good
+1689,Maple Electronics,electronics,5732,US,good
+1690,Redwood & Co,retail,5999,US,good
+1691,Harbor Fuel,fuel,5541,US,good
+1692,Evergreen Games,gaming,7995,US,good
+1693,Union Tech,electronics,5732,US,good
+1694,Evergreen Interactive,gaming,7995,US,good
+1695,Ridgeway Grocery,grocery,5411,US,good
+1696,Summit Tech,electronics,5732,US,good
+1697,Willow Telecom,telecom,4814,US,good
+1698,Maple & Co,retail,5999,US,good
+1699,Liberty Bistro,restaurant,5812,US,good
+1700,Clearwater Electronics,electronics,5732,US,good
+1701,Evergreen Outfitters,retail,5999,US,good
+1702,Maple Supply Co,retail,5999,US,bad
+1703,Birch Cab Co,transit,4111,US,good
+1704,Granite Goods,retail,5999,US,watch
+1705,Ridgeway Energy,fuel,5541,US,good
+1706,Brookline Wireless,telecom,4814,US,good
+1707,The Liberty Table,restaurant,5812,US,good
+1708,Crown Gas & Go,fuel,5541,US,good
+1709,Beacon Studios,gaming,7995,US,good
+1710,Lakeside Bank ATM,atm,6011,US,good
+1711,Crown Interactive,gaming,7995,US,good
+1712,Brightline Gas & Go,fuel,5541,US,good
+1713,Parkside Fuel,fuel,5541,US,good
+1714,House of Summit,department_store,5311,US,good
+1715,Crown's,department_store,5311,US,good
+1716,Silver Connect,telecom,4814,US,good
+1717,House of Pioneer,department_store,5311,US,good
+1718,Granite Grocery,grocery,5411,US,good
+1719,Redwood Connect,telecom,4814,US,good
+1720,Willow Interactive,gaming,7995,US,good
+1721,Ridgeway Studios,gaming,7995,US,good
+1722,Crown Grill,restaurant,5812,US,good
+1723,Harbor Gas & Go,fuel,5541,US,good
+1724,Vintage Bank ATM,atm,6011,US,good
+1725,Meadow Wireless,telecom,4814,US,good
+1726,Birch Fresh Market,grocery,5411,US,good
+1727,Harbor Wireless,telecom,4814,US,good
+1728,Golden Cash Point,atm,6011,US,good
+1729,Riverside Cash Point,atm,6011,US,good
+1730,Copper Grocery,grocery,5411,US,good
+1731,Birch Transit,transit,4111,US,good
+1732,Vintage Play,gaming,7995,US,good
+1733,Aspen Department Store,department_store,5311,US,good
+1734,Silver Fresh Market,grocery,5411,US,good
+1735,Liberty Wireless,telecom,4814,US,good
+1736,Silver Grill,restaurant,5812,US,good
+1737,Meadow Market,grocery,5411,US,good
+1738,Crown Kitchen,restaurant,5812,US,watch
+1739,Granite Audio,electronics,5732,US,good
+1740,Oakwood Cash Point,atm,6011,US,good
+1741,Beacon Cash Point,atm,6011,US,good
+1742,Riverside Bank ATM,atm,6011,US,good
+1743,Meadow Studios,gaming,7995,US,good
+1744,Fairview Studios,gaming,7995,US,good
+1745,Granite Audio,electronics,5732,US,good
+1746,Lakeside Goods,retail,5999,US,watch
+1747,Clearwater ATM,atm,6011,US,good
+1748,Ridgeway Grill,restaurant,5812,US,good
+1749,Clearwater Interactive,gaming,7995,US,good
+1750,Vintage Market,grocery,5411,US,good
+1751,Redwood Rideshare,transit,4111,US,good
+1752,Clearwater Bank ATM,atm,6011,US,good
+1753,Beacon Cab Co,transit,4111,US,good
+1754,Beacon Digital,electronics,5732,US,good
+1755,Pioneer Grill,restaurant,5812,US,good
+1756,House of Stonebridge,department_store,5311,US,good
+1757,Lakeside Department Store,department_store,5311,US,good
+1758,Meadow Connect,telecom,4814,US,good
+1759,Café Cedar,restaurant,5812,US,good
+1760,Clearwater Energy,fuel,5541,US,watch
+1761,Beacon Goods,retail,5999,US,watch
+1762,Liberty Fuel,fuel,5541,US,good
+1763,Birch Tech,electronics,5732,US,good
+1764,Meadow Digital,electronics,5732,US,good
+1765,Harbor Market,grocery,5411,US,good
+1766,Fairview Telecom,telecom,4814,US,good
+1767,Brookline Cash Point,atm,6011,US,good
+1768,Copper Connect,telecom,4814,US,good
+1769,Sunrise Tech,electronics,5732,US,good
+1770,Anchor Games,gaming,7995,US,good
+1771,Maple Fuel,fuel,5541,US,good
+1772,Metro Ridgeway,transit,4111,US,good
+1773,Ridgeway Electronics,electronics,5732,US,good
+1774,Granite Mobile,telecom,4814,US,good
+1775,Ridgeway Foods,grocery,5411,US,good
+1776,Cedar & Co,retail,5999,US,good
+1777,Cedar Digital,electronics,5732,US,good
+1778,Liberty ATM,atm,6011,US,good
+1779,Hillcrest Transit,transit,4111,US,good
+1780,Redwood Audio,electronics,5732,US,good
+1781,Crown & Co,retail,5999,US,good
+1782,Golden Mobile,telecom,4814,US,good
+1783,Lakeside Games,gaming,7995,US,good
+1784,Vintage & Co,retail,5999,US,good
+1785,Liberty Foods,grocery,5411,US,good
+1786,Brookline & Co,retail,5999,US,good
+1787,Parkside Kitchen,restaurant,5812,US,good
+1788,Granite Goods,retail,5999,US,good
+1789,Liberty Rideshare,transit,4111,US,good
+1790,Summit Games,gaming,7995,US,good
+1791,Café Sunrise,restaurant,5812,US,good
+1792,Harbor Fuel,fuel,5541,US,good
+1793,Lakeside Outfitters,retail,5999,US,good
+1794,Evergreen Audio,electronics,5732,US,good
+1795,Oakwood Audio,electronics,5732,US,good
+1796,Evergreen Department Store,department_store,5311,US,good
+1797,Willow Interactive,gaming,7995,US,good
+1798,Crown Foods,grocery,5411,US,good
+1799,Copper Wireless,telecom,4814,US,good
+1800,Liberty Studios,gaming,7995,US,good
+1801,Lakeside Fuel,fuel,5541,US,good
+1802,Clearwater Fuel,fuel,5541,US,good
+1803,Hillcrest Kitchen,restaurant,5812,US,good
+1804,Café Beacon,restaurant,5812,US,good
+1805,Parkside Tech,electronics,5732,US,good
+1806,Beacon Telecom,telecom,4814,US,good
+1807,Northgate Department Store,department_store,5311,US,watch
+1808,Summit Cab Co,transit,4111,US,good
+1809,Northgate Fresh Market,grocery,5411,US,good
+1810,Highland Outfitters,retail,5999,US,good
+1811,Golden & Co,retail,5999,US,good
+1812,Aspen Digital,electronics,5732,US,good
+1813,Sunrise Interactive,gaming,7995,US,good
+1814,Hillcrest ATM,atm,6011,US,good
+1815,Brookline & Sons,department_store,5311,US,good
+1816,Meadow Grill,restaurant,5812,US,good
+1817,The Clearwater Table,restaurant,5812,US,good
+1818,Liberty Mobile,telecom,4814,US,good
+1819,Northgate Kitchen,restaurant,5812,US,good
+1820,Summit Outfitters,retail,5999,US,good
+1821,Aspen Bistro,restaurant,5812,US,good
+1822,Meadow Bistro,restaurant,5812,US,good
+1823,Brightline Energy,fuel,5541,US,good
+1824,Stonebridge Transit,transit,4111,US,good
+1825,Cedar Department Store,department_store,5311,US,good
+1826,The Highland Table,restaurant,5812,US,good
+1827,Union Tech,electronics,5732,US,good
+1828,Hillcrest Transit,transit,4111,US,good
+1829,The Brightline Table,restaurant,5812,US,good
+1830,Redwood Grocery,grocery,5411,US,good
+1831,Lakeside Petroleum,fuel,5541,US,good
+1832,Anchor Mobile,telecom,4814,US,good
+1833,Brookline Telecom,telecom,4814,US,good
+1834,Maple & Co,retail,5999,US,good
+1835,Liberty Bank ATM,atm,6011,US,good
+1836,Harbor Energy,fuel,5541,US,good
+1837,Pioneer Telecom,telecom,4814,US,good
+1838,Crown Petroleum,fuel,5541,US,good
+1839,Pioneer Electronics,electronics,5732,US,good
+1840,Ridgeway & Sons,department_store,5311,US,good
+1841,Meadow Supply Co,retail,5999,US,good
+1842,Café Birch,restaurant,5812,US,good
+1843,Brookline Digital,electronics,5732,US,good
+1844,Summit ATM,atm,6011,US,good
+1845,The Ridgeway Table,restaurant,5812,US,good
+1846,Anchor Grill,restaurant,5812,US,good
+1847,Stonebridge & Sons,department_store,5311,US,good
+1848,Birch Digital,electronics,5732,US,good
+1849,Parkside & Co,retail,5999,US,good
+1850,Northgate Cab Co,transit,4111,US,good
+1851,Maple Transit,transit,4111,US,good
+1852,Lakeside Department Store,department_store,5311,US,good
+1853,Riverside Studios,gaming,7995,US,good
+1854,Café Birch,restaurant,5812,US,watch
+1855,Northgate Transit,transit,4111,US,good
+1856,Parkside & Sons,department_store,5311,US,good
+1857,Vintage Rideshare,transit,4111,US,good
+1858,House of Lakeside,department_store,5311,US,good
+1859,Redwood's,department_store,5311,US,good
+1860,Fairview Rideshare,transit,4111,US,good
+1861,Birch Telecom,telecom,4814,US,good
+1862,Harbor Cash Point,atm,6011,US,good
+1863,Union Gas & Go,fuel,5541,US,watch
+1864,Oakwood ATM,atm,6011,US,good
+1865,Granite Digital,electronics,5732,US,good
+1866,Brookline Energy,fuel,5541,US,good
+1867,Pioneer Market,grocery,5411,US,good
+1868,Aspen Gas & Go,fuel,5541,US,good
+1869,Summit & Co,retail,5999,US,good
+1870,Riverside Transit,transit,4111,US,good
+1871,Riverside Cash Point,atm,6011,US,good
+1872,Willow Grill,restaurant,5812,US,good
+1873,Union & Sons,department_store,5311,US,good
+1874,Silver Energy,fuel,5541,US,good
+1875,Beacon ATM,atm,6011,US,good
+1876,Cedar Supply Co,retail,5999,US,good
+1877,Highland Audio,electronics,5732,US,good
+1878,Beacon Fresh Market,grocery,5411,US,good
+1879,Brookline Outfitters,retail,5999,US,good
+1880,Willow Grill,restaurant,5812,US,good
+1881,Lakeside & Co,retail,5999,US,good
+1882,Redwood Grill,restaurant,5812,US,good
+1883,Beacon ATM,atm,6011,US,good
+1884,Café Liberty,restaurant,5812,US,good
+1885,Silver Fresh Market,grocery,5411,US,good
+1886,Evergreen Wireless,telecom,4814,US,good
+1887,Café Anchor,restaurant,5812,US,good
+1888,Granite Supply Co,retail,5999,US,good
+1889,Golden Petroleum,fuel,5541,US,good
+1890,Liberty Wireless,telecom,4814,US,good
+1891,Silver & Co,retail,5999,US,good
+1892,Pioneer Energy,fuel,5541,US,good
+1893,Crown Mobile,telecom,4814,US,good
+1894,Oakwood ATM,atm,6011,US,good
+1895,Silver's,department_store,5311,US,good
+1896,Pioneer Kitchen,restaurant,5812,US,good
+1897,Parkside Supply Co,retail,5999,US,good
+1898,Willow Grocery,grocery,5411,US,good
+1899,Sunrise Goods,retail,5999,US,good
+1900,Granite Mobile,telecom,4814,US,good
+1901,Clearwater Mobile,telecom,4814,US,good
+1902,Birch Gas & Go,fuel,5541,US,good
+1903,Redwood Play,gaming,7995,US,good
+1904,Harbor Fuel,fuel,5541,US,good
+1905,Hillcrest Connect,telecom,4814,US,good
+1906,House of Parkside,department_store,5311,US,good
+1907,Riverside Wireless,telecom,4814,US,good
+1908,Parkside's,department_store,5311,US,good
+1909,Oakwood Connect,telecom,4814,US,good
+1910,Summit Studios,gaming,7995,US,good
+1911,Meadow Fuel,fuel,5541,US,good
+1912,Lakeside Gas & Go,fuel,5541,US,good
+1913,Pioneer Tech,electronics,5732,US,good
+1914,Parkside Gas & Go,fuel,5541,US,good
+1915,Silver Energy,fuel,5541,US,good
+1916,Hillcrest Goods,retail,5999,US,good
+1917,Ridgeway ATM,atm,6011,US,good
+1918,Summit Department Store,department_store,5311,US,good
+1919,Copper Cab Co,transit,4111,US,good
+1920,Hillcrest ATM,atm,6011,US,good
+1921,Sunrise & Co,retail,5999,US,good
+1922,Brightline Mobile,telecom,4814,US,good
+1923,Summit ATM,atm,6011,US,good
+1924,Union Rideshare,transit,4111,US,watch
+1925,Golden Bank ATM,atm,6011,US,good
+1926,Beacon Petroleum,fuel,5541,US,good
+1927,Brightline Studios,gaming,7995,US,good
+1928,Birch Grocery,grocery,5411,US,good
+1929,Ridgeway Bank ATM,atm,6011,US,good
+1930,Aspen Goods,retail,5999,US,good
+1931,Copper Transit,transit,4111,US,good
+1932,Union Supply Co,retail,5999,US,good
+1933,Fairview Tech,electronics,5732,US,good
+1934,Hillcrest Rideshare,transit,4111,US,good
+1935,Clearwater Supply Co,retail,5999,US,good
+1936,Sunrise Tech,electronics,5732,US,good
+1937,Union Grocery,grocery,5411,US,good
+1938,Union Mobile,telecom,4814,US,good
+1939,Ridgeway Mobile,telecom,4814,US,good
+1940,Fairview Supply Co,retail,5999,US,good
+1941,Birch Electronics,electronics,5732,US,good
+1942,Beacon Electronics,electronics,5732,US,good
+1943,Maple's,department_store,5311,US,good
+1944,Union Cash Point,atm,6011,US,good
+1945,Summit Tech,electronics,5732,US,good
+1946,Brookline Goods,retail,5999,US,good
+1947,Crown Tech,electronics,5732,US,good
+1948,Union Wireless,telecom,4814,US,good
+1949,The Parkside Table,restaurant,5812,US,good
+1950,Golden Foods,grocery,5411,US,good
+1951,Clearwater Audio,electronics,5732,US,good
+1952,Maple Play,gaming,7995,US,good
+1953,Summit Foods,grocery,5411,US,good
+1954,Stonebridge Energy,fuel,5541,US,good
+1955,Liberty Cash Point,atm,6011,US,good
+1956,Copper's,department_store,5311,US,good
+1957,Copper Outfitters,retail,5999,US,good
+1958,Brightline Outfitters,retail,5999,US,good
+1959,Lakeside Cab Co,transit,4111,US,good
+1960,Brightline Grocery,grocery,5411,US,good
+1961,Union ATM,atm,6011,US,good
+1962,The Granite Table,restaurant,5812,US,good
+1963,Evergreen Gas & Go,fuel,5541,US,good
+1964,Metro Fairview,transit,4111,US,good
+1965,Summit Wireless,telecom,4814,US,good
+1966,Pioneer & Sons,department_store,5311,US,good
+1967,Oakwood Gas & Go,fuel,5541,US,good
+1968,Copper Energy,fuel,5541,US,good
+1969,Brightline Market,grocery,5411,US,good
+1970,Café Granite,restaurant,5812,US,good
+1971,Willow Tech,electronics,5732,US,good
+1972,Beacon Market,grocery,5411,US,good
+1973,Parkside & Co,retail,5999,US,good
+1974,Summit Goods,retail,5999,US,good
+1975,Willow Department Store,department_store,5311,US,good
+1976,Union Rideshare,transit,4111,US,good
+1977,Stonebridge Fresh Market,grocery,5411,US,good
+1978,Union Gas & Go,fuel,5541,US,good
+1979,Silver Connect,telecom,4814,US,good
+1980,Granite Cab Co,transit,4111,US,good
+1981,Clearwater Department Store,department_store,5311,US,good
+1982,Summit Grocery,grocery,5411,US,good
+1983,Northgate Petroleum,fuel,5541,US,good
+1984,Hillcrest Audio,electronics,5732,US,good
+1985,Ridgeway Fuel,fuel,5541,US,good
+1986,Redwood Play,gaming,7995,US,good
+1987,Metro Redwood,transit,4111,US,good
+1988,Ridgeway Games,gaming,7995,US,good
+1989,Ridgeway Fuel,fuel,5541,US,good
+1990,Maple Rideshare,transit,4111,US,good
+1991,Pioneer Wireless,telecom,4814,US,watch
+1992,Highland Petroleum,fuel,5541,US,good
+1993,Anchor Market,grocery,5411,US,good
+1994,Union Audio,electronics,5732,US,good
+1995,Harbor's,department_store,5311,US,good
+1996,Highland Grocery,grocery,5411,US,good
+1997,Cedar Foods,grocery,5411,US,good
+1998,Harbor Kitchen,restaurant,5812,US,good
+1999,Birch Electronics,electronics,5732,US,good
+2000,House of Aspen,department_store,5311,US,good

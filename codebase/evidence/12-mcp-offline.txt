@@ -1,0 +1,39 @@
+# 12-mcp-offline — MCP door offline: 4 proofs (RBAC, idempotency, retry, enumeration)
+# run: 2026-07-30 05:21 UTC
+# cwd: course/week-16/lab
+# exit: 0   status: PASS
+
+$ python3 mcp_demo.py
+
+
+=== TWO-ANALYST TEST — both ask: lookup_dispute(4417) ===
+
+  Analyst A (type_a):  Type-A · NORTHGATE DIGITAL · $312.00 · intake
+  Analyst B (type_b):  403 DENIED — analyst_b@meridian.test (scope=type_b) may not access dispute/4417
+
+--- append-only audit log ---
+  {"acting_identity": "analyst_a@meridian.test", "scope": "type_a", "action": "lookup_dispute", "resource": "dispute/4417", "decision": "allow"}
+  {"acting_identity": "analyst_b@meridian.test", "scope": "type_b", "action": "lookup_dispute", "resource": "dispute/4417", "decision": "deny"}
+
+RESULT: PASS ✓ scope holds — different answers + matching audit
+
+=== IDEMPOTENT WRITE — create_ticket, same Idempotency-Key twice ===
+
+  first : {"ticket_id": "TCK-4417-9001", "dispute_id": "4417", "subject": "Governed-door recommendation — dispute 4417", "status": "open"}
+  replay: {"ticket_id": "TCK-4417-9001", "dispute_id": "4417", "subject": "Governed-door recommendation — dispute 4417", "status": "open", "idempotent_replay": true}
+  ✓ same ticket_id, replay marked — one ticket exists; the retry was SAFE
+
+=== RETRY/BACKOFF — fetch_transactions through the flaky legacy core ===
+
+  attempt 1: 503 legacy core unavailable → backoff 0.05s, retrying
+  result: [{"txn_id": "T-90021", "amount_usd": 312.0, "channel": "online", "mcc": "5815"}]
+  ✓ the agent never saw the 503 — the TOOL absorbed it with backoff
+
+=== ENUMERATION CHECK — not-found must look exactly like out-of-scope ===
+
+  Analyst B asks for 4417 (exists, Type-A):  403 DENIED — analyst_b@meridian.test (scope=type_b) may not access dispute/4417
+  Analyst B asks for 9999 (does not exist):  403 DENIED — analyst_b@meridian.test (scope=type_b) may not access dispute/9999
+  ✓ identical denial shape + both denials audited — Type-B cannot enumerate Type-A ids
+
+DEMO: PASS ✓ all four proofs hold — scope, idempotent replay, retry/backoff, enumeration-safe denials
+

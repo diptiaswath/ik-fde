@@ -1,0 +1,14 @@
+# 11-eval-gate — Golden eval gate passes (the gate CI runs on every PR)
+# run: 2026-07-30 05:21 UTC
+# cwd: platform/agent
+# exit: 0   status: PASS
+
+$ uv run meridian-agent eval --suite smoke --min-pass 0.9 --mock
+
+eval suite 'smoke' — 3 disputes · gate >= 90%
+  dispute   1  [PASS]  8/8 checks
+  dispute   7  [PASS]  8/8 checks
+  dispute  29  [PASS]  8/8 checks
+
+pass rate: 100% (3/3)  ·  GATE PASSED
+

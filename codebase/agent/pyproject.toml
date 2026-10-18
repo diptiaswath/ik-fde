@@ -1,0 +1,35 @@
+[project]
+name = "meridian-agent"
+version = "0.1.0"
+description = "Meridian dispute-resolution agent — the W13 whole-game demo for the IK FDE course"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "IK FDE Curriculum" }]
+
+# The demo runs end-to-end with NOTHING but the stdlib in --mock mode.
+# Everything below is optional and only used on the "real" paths.
+dependencies = []
+
+[project.optional-dependencies]
+# Live Postgres path (the hosted/local Meridian platform). Falls back to the
+# bundled JSON fixture automatically if psycopg or the DB is unavailable.
+db = ["psycopg[binary]>=3.1"]
+# Real LLM agents via the OpenAI Agents SDK + Responses API. Only imported when
+# an OPENAI_API_KEY (or Azure/Foundry) config is present AND --mock is not set.
+llm = ["openai-agents>=0.0.1", "openai>=1.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+meridian-agent = "meridian_agent.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/meridian_agent"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

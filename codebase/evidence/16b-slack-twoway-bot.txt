@@ -1,0 +1,29 @@
+# 16b-slack-twoway-bot — Two-way Slack bot: routing + scope enforcement (Type-B→Type-A denied)
+# run: 2026-07-30 05:21 UTC
+# cwd: course/week-16/lab
+# exit: 0   status: PASS
+
+$ python3 meridian_slack_bot.py --selftest
+
+routing + governance selftest (no Slack connection needed)
+
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "help", "resource": "-", "decision": "allow"}
+  [PASS] scope=type_a  'help'                             → expected 'What I can answer'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "help", "resource": "-", "decision": "allow"}
+  [PASS] scope=type_a  ''                                 → expected 'What I can answer'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "status", "resource": "-", "decision": "allow"}
+  [PASS] scope=type_a  'status'                           → expected 'Meridian bot — status'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "lookup_dispute", "resource": "dispute/29", "decision": "allow"}
+  [PASS] scope=type_a  'dispute 29'                       → expected 'Dispute 29'
+    audit → {"acting_identity": "selftest", "scope": "type_b", "action": "lookup_dispute", "resource": "dispute/29", "decision": "deny", "http": "403"}
+  [PASS] scope=type_b  '@bot dispute 29'                  → expected '403'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "list_tickets", "resource": "dispute/29", "decision": "allow", "count": 4}
+  [PASS] scope=type_a  'tickets 29'                       → expected 'ticket(s) on dispute 29'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "search_policy", "resource": "query=provisional credit", "decision": "allow", "hits": 6}
+  [PASS] scope=type_a  'policy provisional credit'        → expected 'Policy hits'
+    audit → {"acting_identity": "selftest", "scope": "type_a", "action": "unrecognized", "resource": "what is the weather", "decision": "allow"}
+  [PASS] scope=type_a  'what is the weather'              → expected "didn't recognise"
+
+  audit rows: 8 (incl. 1 deny) — every question logged, allow AND deny
+SELFTEST PASS
+

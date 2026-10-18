@@ -1,0 +1,8 @@
+# 07-rbac-allow — RBAC: Type-A key on a Type-A dispute → 200
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: 0   status: PASS
+
+$ curl -s -o /dev/null -w %{http_code} -H Authorization: Bearer mrdn_…redacted… http://localhost:3100/api/v1/disputes/29
+
+200

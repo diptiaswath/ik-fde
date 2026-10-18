@@ -1,0 +1,8 @@
+# 19-bedrock-invoke — Bedrock model answers (streaming converse)
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: None   status: SKIPPED
+
+$ python3 -c "import boto3;r=boto3.client('bedrock-runtime',region_name='us-east-1').converse_stream(modelId='us.anthropic.claude-haiku-4-5-20251001-v1:0',messages=[{'role':'user','content':[{'text':'Reply with the single word: up'}]}],inferenceConfig={'maxTokens':8,'temperature':0});print('MODEL SAYS:', ''.join(e['contentBlockDelta']['delta'].get('text','') for e in r['stream'] if 'contentBlockDelta' in e).strip())"
+
+prerequisite absent: the AWS Lab Control Panel to be STARTED (stopped ⇒ explicit IAM deny on bedrock:* / bedrock-agentcore:*). Proof from a started lab: archive/agentcore_session_2026-07-30.txt

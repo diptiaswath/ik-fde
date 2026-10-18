@@ -1,0 +1,13 @@
+# 22-decks-validate — All five decks: 0 overlap/overflow problems
+# run: 2026-07-30 05:21 UTC
+# cwd: .
+# exit: 0   status: PASS
+
+$ for f in course/week-13/*.pptx course/week-14/*.pptx course/week-15/*.pptx course/week-16/*.pptx course/week-17/*.pptx; do python3 course/validate_deck.py "$f" | tail -1; done
+
+OK — 0 problem(s), 61 slides
+OK — 0 problem(s), 46 slides
+OK — 0 problem(s), 71 slides
+OK — 0 problem(s), 41 slides
+OK — 0 problem(s), 35 slides
+

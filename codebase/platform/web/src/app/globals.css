@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-meridian-bg text-meridian-ink antialiased;
+}
+
+/* Tabular numbers for money / countdown / id columns so they line up. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thin custom scrollbar for the dense tables / sidebar. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cdd5cf transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #cdd5cf;
+  border-radius: 9999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Subtle row-entrance + pulse used sparingly for live status. */
+@keyframes meridian-pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(225 29 72 / 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgb(225 29 72 / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(225 29 72 / 0);
+  }
+}
+.pulse-breach {
+  animation: meridian-pulse-ring 2s infinite;
+}

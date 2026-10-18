@@ -1,0 +1,53 @@
+{
+  "console": "http://localhost:3100",
+  "pages": [
+    [
+      "01",
+      "login",
+      "01_login.png",
+      "The front door. Email-only in the training build; a real deployment puts SSO here."
+    ],
+    [
+      "02",
+      "dashboard",
+      "02_dashboard.png",
+      "The desk view: what is breached, what is aging, what needs a decision today."
+    ],
+    [
+      "03",
+      "disputes_queue",
+      "03_disputes_queue.png",
+      "The work queue, ordered by Reg E deadline. Red BREACHED badges are the problem the whole engagement exists to fix."
+    ],
+    [
+      "04",
+      "dispute_detail",
+      "04_dispute_detail.png",
+      "One case, whole: the transaction, evidence gathered across source systems, the Reg E clock, the actions an analyst may take \u2014 and Linked tickets, where the agent's recommendations land."
+    ],
+    [
+      "05",
+      "transactions",
+      "05_transactions.png",
+      "The core-banking view \u2014 100k seeded transactions. This is the 'disparate system' an analyst would otherwise open in another tab."
+    ],
+    [
+      "06",
+      "customers",
+      "06_customers.png",
+      "Customer records: segment, tenure, and the disputes they have filed."
+    ],
+    [
+      "07",
+      "policies",
+      "07_policies.png",
+      "The policy library the agent cites from. Chunk ids here are what appear as [chunk NN] in every recommendation \u2014 and one chunk is deliberately poisoned."
+    ],
+    [
+      "08",
+      "linked_tickets",
+      "08_linked_tickets.png",
+      "Where every agent write lands \u2014 the newest ticket is the last run. The subject line names which door wrote it."
+    ]
+  ]
+}

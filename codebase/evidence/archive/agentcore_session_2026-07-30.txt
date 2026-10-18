@@ -1,0 +1,149 @@
+# AgentCore live session — 2026-07-30 (evidence capture for PM feedback round)
+
+$ aws sts get-caller-identity
+{
+    "UserId": "AIDARCKLVWEUVAETJPOXR",
+    "Account": "073710022953",
+    "Arn": "arn:aws:iam::073710022953:user/intksrtuser09"
+}
+
+$ agentcore status
+
+⚠️ Recommendation: The Starter Toolkit CLI is no longer supported.
+   Please use the AgentCore CLI (@aws/agentcore) to create, develop, and deploy 
+agents on Amazon Bedrock AgentCore.
+   New Bedrock AgentCore features are only accessible in the AgentCore CLI.
+
+   To uninstall this starter toolkit, run: pip uninstall 
+bedrock-agentcore-starter-toolkit
+   To install the AgentCore CLI: npm install -g @aws/agentcore
+   To import existing agents, run: agentcore import
+   Set AGENTCORE_SUPPRESS_RECOMMENDATION=1 to silence this warning.
+
+🔎 Retrieving memory resource with ID: meridian_triage_mem-PnDH2840Wa...
+  Found memory: meridian_triage_mem-PnDH2840Wa
+╭─────────────────────── Agent Status: meridian_triage ────────────────────────╮
+│ Ready - Agent deployed and endpoint available                                │
+│                                                                              │
+│ Agent Details:                                                               │
+│ Agent Name: meridian_triage                                                  │
+│ Agent ARN:                                                                   │
+│ arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-Vig │
+│ q5WHGKb                                                                      │
+│ Endpoint: DEFAULT (READY)                                                    │
+│ Region: us-east-1 | Account: 073710022953                                    │
+│                                                                              │
+│ Network: Public                                                              │
+│                                                                              │
+│ Memory: STM only (meridian_triage_mem-PnDH2840Wa)                            │
+│                                                                              │
+│ Deployment Info:                                                             │
+│ Created: 2026-07-22 08:58:00.486439+00:00                                    │
+│ Last Updated: 2026-07-22 08:58:10.376297+00:00                               │
+│                                                                              │
+│ 📋 CloudWatch Logs:                                                          │
+│    /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT        │
+│ --log-stream-name-prefix "2026/07/29/[runtime-logs"                          │
+│    /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT        │
+│ --log-stream-names "otel-rt-logs"                                            │
+│                                                                              │
+│ 🔍 GenAI Observability Dashboard:                                            │
+│    https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-ob │
+│ servability/agent-core                                                       │
+│                                                                              │
+│ Note: Observability data may take up to 10 minutes to appear after first     │
+│ launch                                                                       │
+│                                                                              │
+│ 💡 Tail logs with:                                                           │
+│    aws logs tail                                                             │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/29/[runtime-logs" --follow                 │
+│    aws logs tail                                                             │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/29/[runtime-logs" --since 1h               │
+│                                                                              │
+│ Ready to invoke:                                                             │
+│    agentcore invoke '{"prompt": "Hello"}'                                    │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+$ agentcore invoke '{"dispute_id": 29}'
+
+⚠️ Recommendation: The Starter Toolkit CLI is no longer supported.
+   Please use the AgentCore CLI (@aws/agentcore) to create, develop, and deploy 
+agents on Amazon Bedrock AgentCore.
+   New Bedrock AgentCore features are only accessible in the AgentCore CLI.
+
+   To uninstall this starter toolkit, run: pip uninstall 
+bedrock-agentcore-starter-toolkit
+   To install the AgentCore CLI: npm install -g @aws/agentcore
+   To import existing agents, run: agentcore import
+   Set AGENTCORE_SUPPRESS_RECOMMENDATION=1 to silence this warning.
+
+╭────────────────────────────── meridian_triage ───────────────────────────────╮
+│ Session: ec8ecf89-c9cb-4815-b44d-edb15246f3f0                                │
+│ Request ID: 842a99f6-5aca-40bc-aa96-dc17b5e08f1d                             │
+│ ARN:                                                                         │
+│ arn:aws:bedrock-agentcore:us-east-1:073710022953:runtime/meridian_triage-Vig │
+│ q5WHGKb                                                                      │
+│ Logs: aws logs tail                                                          │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/29/[runtime-logs" --follow                 │
+│       aws logs tail                                                          │
+│ /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT           │
+│ --log-stream-name-prefix "2026/07/29/[runtime-logs" --since 1h               │
+│ GenAI Dashboard:                                                             │
+│ https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#gen-ai-obser │
+│ vability/agent-core                                                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Response:
+{"dispute_id": 29, "guardrail_tripped": false, "ticket_id": "9000000024", 
+"recommendation": "Regulation E provisional credit applies to unauthorized 
+electronic fund transfers, and this dispute (Type A, reason code 11.2) appears 
+to involve a potential unauthorized transaction. However, the record shows 
+`provisional_credit_issued: \"False\"`, meaning no provisional credit has been 
+issued yet. The analyst should review the 3 artifacts on file to determine if 
+compelling evidence per  supports the cardholder's claim of non-authorization, 
+and if so, issue provisional credit while the representment investigation 
+proceeds—ensuring all required disclosures per  are provided in plain language. 
+Given the SLA has not been breached and the Reg E deadline is June 30, 2026, 
+there is adequate time to conduct a thorough review before making a final 
+determination.\n\nRECOMMENDATION: HUMAN_REVIEW", "see_it_live": 
+"https://ik-fde-casestudy-bank.vercel.app/disputes/29"}
+
+$ curl -s -H "Authorization: Bearer $MERIDIAN_API_KEY" https://ik-fde-casestudy-bank.vercel.app/api/v1/disputes/29/tickets   # newest ticket, citations intact
+{
+  "ticket_id": "9000000024",
+  "dispute_id": "29",
+  "channel": "chat",
+  "subject": "AgentCore-agent recommendation \u2014 dispute 29",
+  "body": "Regulation E provisional credit applies to unauthorized electronic fund transfers, and this dispute (Type A, reason code 11.2) appears to involve a potential unauthorized transaction. However, the record shows `provisional_credit_issued: \"False\"`, meaning no provisional credit has been issued yet. The analyst should review the 3 artifacts on file to determine if compelling evidence per [chunk 24] supports the cardholder's claim of non-authorization, and if so, issue provisional credit while the representment investigation proceeds\u2014ensuring all required disclosures per [chunk 32] are provided in plain language. Given the SLA has not been breached and the Reg E deadline is June 30, 2026, there is adequate time to conduct a thorough review before making a final determination.\n\nRECOMMENDATION: HUMAN_REVIEW",
+  "status": "open",
+  "is_duplicate": false,
+  "duplicate_of": null,
+  "created_at": "2026-07-29T21:01:14.145Z"
+}
+
+$ python3 - # Memory round-trip: list_events on meridian_triage_mem-PnDH2840Wa
+events in session: 0
+
+$ python3 - <<'EOF'   # Memory: carry dispute context across invocations (supplementary/agentcore.md §3b)
+create_event → 0000001785358982267#b617afcd
+list_events → 1 event(s); latest text:
+   Dispute 29 (Type A, 11.2): no provisional credit issued; recommended HUMAN_REVIEW; ticket 9000000024.
+
+$ aws logs tail /aws/bedrock-agentcore/runtimes/meridian_triage-Vigq5WHGKb-DEFAULT --since 30m
+2026-07-29T21:01:14.179000+00:00 2026/07/29/[runtime-logs-ec8ecf89-c9cb-4815-b44d-edb15246f3f0]cd855625-2772-47ca-bc68-5bf710c52434 {"timestamp": "2026-07-29T21:01:14.179Z", "level": "INFO", "message": "Invocation completed successfully (4.900s)", "logger": "bedrock_agentcore.app", "requestId": "e33967fc-87de-47cb-8bc7-feb15a1deb07", "sessionId": "ec8ecf89-c9cb-4815-b44d-edb15246f3f0"}
+
+$ # Where the traces live — console evidence, 2026-07-30
+$ # GenAI Observability (CloudWatch -> GenAI Observability -> Bedrock AgentCore) is the
+$ # front door; on the shared training account its sessions/traces list views can spin
+$ # indefinitely. The spans themselves are ALWAYS in the `aws/spans` log group — query them:
+$ aws logs start-query --log-group-name aws/spans ... \
+    'fields @timestamp, name, attributes.session.id | sort @timestamp desc | limit 10'
+Complete | 4 rows
+   2026-07-29 21:03:03.397 | ListEvents               | dispute-29
+   2026-07-29 21:03:03.074 | CreateEvent              | dispute-29
+   2026-07-29 21:02:28.121 | ListEvents               | ec8ecf89-c9cb-4815-b44d-edb15246f3f0
+   2026-07-29 21:01:14.189 | AgentCore.Runtime.Invoke | ec8ecf89-c9cb-4815-b44d-edb15246f3f0
+$ # Console screenshots captured this session -> course/assets/aws-console/*_2026-07-30.jpg
