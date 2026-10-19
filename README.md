@@ -1,8 +1,6 @@
 # IK FDE — The Meridian Engagement 
 `codebase/` is what you run.
 
-![Complete tree of the repository: curriculum with one folder per week split into pre-class, live-class and post-class, and the codebase modules](codebase/docs/repo-map.svg)
-
 
 ## The codebase
 
