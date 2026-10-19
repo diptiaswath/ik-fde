@@ -1,10 +1,27 @@
 # IK FDE — The Meridian Engagement · instructor handover
 
-Everything that runs lives in `codebase/`: the Meridian platform, the reference agent, the labs and the evidence captures.
+You play **Forgepoint AI**, deployed into **Meridian Bank** to clear a payment-dispute backlog that is breaching the Regulation E clock. This repo is everything that runs for that story: the Meridian platform, the reference agent, the labs the class demos are built from, and the evidence captures.
 
-## Getting started
+Every demo, lab and eval has a `--mock` path that needs no network, no keys and no AWS account ($0). Cloud paths are optional extras.
 
-All commands run from `codebase/`. Nothing here needs an AWS account, a paid key or the internet beyond the first install.
+## What's in the repo
+
+| Path | What it is |
+|---|---|
+| `codebase/platform/` | Meridian Ops Console (Next.js) + Postgres schema, seed and API |
+| `codebase/agent/` | Reference triage pipeline, 150-case golden suite and tests |
+| `codebase/labs/w14-design/` | W14 terminal demos: scored stack matrix, topology selector |
+| `codebase/labs/w15-build/` | W15 demos 1–3 and the Lambda + AgentCore deploy ladders |
+| `codebase/notebooks/` | Per-week companion notebooks (W13–W15) |
+| `codebase/docs/` | Walkthroughs, API reference, supplementary reads |
+| `codebase/evidence/` | Dated captures proving each component ran; start at [`EVIDENCE_INDEX.md`](codebase/evidence/EVIDENCE_INDEX.md) |
+| [`AGENTS.md`](AGENTS.md) | Context file for AI coding assistants: invariants, locked stack, gates |
+
+[`codebase/README.md`](codebase/README.md) is the detailed map, and `make help` lists every command.
+
+## Quick start
+
+All commands run from `codebase/`.
 
 ### 1. Install the prerequisites
 
@@ -16,27 +33,23 @@ All commands run from `codebase/`. Nothing here needs an AWS account, a paid key
 | [`uv`](https://docs.astral.sh/uv/) | any | runs the agent and its tests |
 | AWS CLI v2 | optional | only for the cloud deploy rungs |
 
-**Install Docker**
+**Docker**
 
-- **macOS:** install [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/), or `brew install --cask docker`. Then **open Docker Desktop once** and wait for the whale icon to say "running".
+- **macOS:** install [Docker Desktop](https://docs.docker.com/desktop/setup/install/mac-install/), or `brew install --cask docker`. Then open Docker Desktop once and wait for the whale icon to say "running".
 - **Windows:** install [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/) with the WSL 2 backend, and run the commands below from a WSL terminal.
 - **Linux (Ubuntu/Debian):** follow [Install Docker Engine](https://docs.docker.com/engine/install/ubuntu/), then `sudo usermod -aG docker $USER` and log out and back in so you don't need `sudo`.
-
-Check it worked:
 
 ```bash
 docker --version
 docker compose version
-docker run --rm hello-world
+docker run --rm hello-world     # confirms the daemon works
 ```
 
-**Install the rest (macOS example)**
+**The rest** (macOS shown; on Linux or Windows use your package manager or the official installers)
 
 ```bash
 brew install node python@3.12 uv
 ```
-
-On Linux or Windows, use your package manager or the official installers for Node, Python and uv.
 
 ### 2. Check your setup
 
@@ -52,16 +65,13 @@ make up            # Postgres in Docker + schema + deterministic seed + two scop
 make web           # builds and serves the Ops Console on http://localhost:3100
 ```
 
-Leave `make web` running and open a second terminal for the rest:
+Leave `make web` running and use a second terminal for the rest:
 
 ```bash
 make agent         # triage pipeline on dispute 29 (mock brain)
 make verify        # $0 smoke gate: prerequisites + smoke eval + unit tests
 make golden        # full 150-case golden gate
-make help          # every target
 ```
-
-Sign in at <http://localhost:3100> with `jason.soto@meridianbank.com` (Type A) or `robert.joyce@meridianbank.com` (Type B). Email only, no password.
 
 ### 4. Stop it
 
@@ -80,14 +90,24 @@ make clean         # stop Postgres and delete the data volume
 | Port 3100 already in use | `make web PORT=3101` |
 | Console API routes return 500 | Node deps are half-installed: `cd codebase/platform/web && rm -rf node_modules && npm install`. |
 
-## Directory structure
+## The Ops Console
 
-The W15 demos live in `codebase/labs/w15-build/demo/`. Run them from that directory; each takes `--mock` (no network, no keys).
+| Where | How | URL |
+|---|---|---|
+| Hosted class instance (always on) | nothing to do | <https://ik-fde-casestudy-bank.vercel.app> |
+| Your laptop | `make up && make web` | `http://localhost:3100` |
+| Your own EC2 box | [`codebase/deploy/ec2/EC2_DEPLOY.md`](codebase/deploy/ec2/EC2_DEPLOY.md) | `http://<dns>:3100` |
+
+Sign in with a seeded analyst: `jason.soto@meridianbank.com` (Type A) or `robert.joyce@meridianbank.com` (Type B). Email only; there is no password in this training build.
+
+## The W15 demos
+
+The demos live in `codebase/labs/w15-build/demo/`. Run them from that directory; each takes `--mock`. Its [`README.md`](codebase/labs/w15-build/demo/README.md) is the operator runbook (T-30 checklist, run order, fallbacks).
 
 ```
 codebase/labs/w15-build/
 ├── demo/
-│   ├── README.md                    operator runbook: T-30 checklist, run order, fallbacks
+│   ├── README.md                    operator runbook
 │   ├── .env.example                 copy to .env (MERIDIAN_API_KEY, MERIDIAN_BASE_URL)
 │   ├── common.py                    shared plumbing: Meridian data layer + console trace
 │   ├── data/fixture.json            offline data for --mock
@@ -123,24 +143,9 @@ codebase/labs/w15-build/
 └── test_bedrock.py                  checks your Bedrock access
 ```
 
-The platform the demos talk to is in `codebase/platform/` (Postgres + Ops Console), and the reference agent is in `codebase/agent/`.
-
-## The codebase
-
-`codebase/README.md` is the map. `make help` lists every command. `codebase/evidence/EVIDENCE_INDEX.md` lists every component with the command that proves it and a quoted line from the real output. The deep-reference notebooks are in `codebase/notebooks/`. Learners work in their own fork of this repo, and `AGENTS.md` is the context file their AI pair reads first.
-
-## The portal
-
-| Where | How | URL |
-|---|---|---|
-| Hosted class instance (always on) | nothing to do | <https://ik-fde-casestudy-bank.vercel.app> |
-| Your laptop | `make up && make web` | `http://localhost:3100` |
-| Your own EC2 box | `codebase/deploy/ec2/EC2_DEPLOY.md` | `http://<dns>:3100` |
-
-Sign in with a seeded analyst: `jason.soto@meridianbank.com` (Type A) or `robert.joyce@meridianbank.com` (Type B). Email only; no password in this training build.
-
 ## Ground rules for delivery
 
 - Every demo has a $0 offline path. If something dies mid-class, switch to `--mock` and say so.
 - Never narrate a screenshot as if it were live. The captures are fallbacks.
+- Learners work in their own fork of this repo; `AGENTS.md` is the context file their AI pair reads first.
 - Tear down what you deploy: `./teardown.sh`, `agentcore destroy --force`, `make down`.
