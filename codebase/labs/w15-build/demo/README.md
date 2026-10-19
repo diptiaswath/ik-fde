@@ -2,8 +2,7 @@
 
 Four demos, watched (not coded along), building to one payoff: **the agent's
 recommendation lands in the live Meridian Ops Console** — problem seen in the
-product (W13), solution landed in the product (today). Timings and narration
-beats live in `../run-of-show.md`; this file is the operator's manual.
+product (W13), solution landed in the product (today). This file is the operator's manual.
 
 | # | Script | What the class sees | Time |
 |---|---|---|---|

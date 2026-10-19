@@ -14,7 +14,7 @@ export MERIDIAN_DB_URL      := $(DB_URL)
 export MERIDIAN_BASE_URL    := $(BASE_URL)
 export MERIDIAN_CONSOLE_URL := $(CONSOLE)
 
-.PHONY: help up deps seed keys web web-dev agent eval test mcp mcp-live slack slack-live slack-mcp slack-bot slack-bot-test down clean doctor
+.PHONY: help up deps seed keys web web-dev agent eval test down clean doctor
 
 help: ## show this list
 	@grep -hE '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | \
@@ -57,7 +57,7 @@ agent: ## run the triage pipeline on dispute $(DISPUTE) (mock brain, no AWS)
 eval: ## the smoke eval gate — the same gate CI runs on every PR
 	cd agent && uv run meridian-agent eval --suite smoke --min-pass 0.9 --mock
 
-golden: ## the full 150-case golden gate (incl. adversarial) — the W17 deploy gate
+golden: ## the full 150-case golden gate (incl. adversarial) — the release gate
 	cd agent && uv run meridian-agent eval --suite golden --min-pass 0.95 --mock
 
 verify: ## $$0 smoke gate: prerequisites + smoke eval + unit tests. Run this first.
@@ -70,28 +70,6 @@ verify: ## $$0 smoke gate: prerequisites + smoke eval + unit tests. Run this fir
 
 test: ## the agent's pytest suite
 	cd agent && uv run pytest -q
-
-mcp: ## W16 governed door, offline: two-analyst RBAC + idempotency + audit
-	cd labs/w16-integrate && python3 mcp_demo.py
-
-mcp-live: ## the same door against MERIDIAN_BASE_URL (needs MERIDIAN_KEY_A/_B)
-	cd labs/w16-integrate && python3 mcp_demo.py --live
-	@echo "==> now refresh $(CONSOLE)/disputes/$(DISPUTE) — the ticket is in Linked tickets"
-
-slack: ## Slack escalation demo — all 7 scenarios, offline, $0
-	cd labs/w16-integrate && python3 slack_integration_demo.py
-
-slack-live: ## post a real card (needs SLACK_BOT_TOKEN + SLACK_CHANNEL_ID)
-	cd labs/w16-integrate && python3 slack_integration_demo.py --real
-
-slack-mcp: ## selftest the Slack MCP server (initialize → list → call → dedupe → deny)
-	cd labs/w16-integrate && python3 meridian_slack_mcp.py --selftest
-
-slack-bot: ## run the TWO-WAY bot — ask it questions in Slack (needs SLACK_APP_TOKEN too)
-	cd labs/w16-integrate && python3 meridian_slack_bot.py
-
-slack-bot-test: ## selftest the two-way bot's routing + scope enforcement (no Slack needed)
-	cd labs/w16-integrate && python3 meridian_slack_bot.py --selftest
 
 doctor: ## check prerequisites and report what's missing
 	@echo "docker : $$(docker --version 2>/dev/null || echo MISSING)"

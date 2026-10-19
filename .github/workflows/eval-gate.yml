@@ -1,5 +1,5 @@
 # The merge button is a test: the smoke eval must pass or the PR is blocked.
-# This is the gate the W15 class watches and the W17 class hardens.
+# This is the gate the W15 class watches.
 name: eval-gate
 on:
   pull_request:
@@ -27,7 +27,7 @@ jobs:
         run: PYTHONPATH=src python3 -m pytest -q
 
   golden-gate:
-    # The W17 deploy gate: the full 150 cases including the adversarial ones.
+    # The release gate: the full 150 cases including the adversarial ones.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

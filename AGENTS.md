@@ -6,10 +6,8 @@ instruction here conflicts with something an assistant infers, this file wins.
 
 ## What this repo is
 
-One repo, two halves. `curriculum/` is the taught material: one folder per week
-(W13–W17, W22–W23), each split into `pre-class/`, `live-class/` and
-`post-class/`. `codebase/` is everything that runs: the Meridian platform, the
-reference agent, the labs the demos are built from, and the evidence captures.
+`codebase/` is everything that runs: the Meridian platform, the reference
+agent, the labs the demos are built from, and the evidence captures.
 
 The story: **Forgepoint AI** (you) deployed into **Meridian Bank** to fix a
 payment-dispute backlog breaching the Regulation E clock. Class demos live here
@@ -38,15 +36,11 @@ capstone repo — it does not live here.
 
 | Path | What it is |
 |---|---|
-| `curriculum/W##_*/` | Per week: `pre-class/`, `live-class/` (deck + Instructor Guide + videos), `post-class/` |
 | `codebase/agent/` | Reference pipeline (`meridian_agent`) + 150-case golden suite + tests |
 | `codebase/platform/` | The Meridian Ops Console (Next.js) + Postgres schema, seed and API |
 | `codebase/labs/w14-design/` | W14 terminal demos: scored stack matrix, topology selector |
 | `codebase/labs/w15-build/` | W15 demos 1–3, the Lambda + AgentCore deploy ladders |
-| `codebase/labs/w16-integrate/` | The governed MCP door, the Slack MCP server, AgentCore Gateway |
-| `codebase/labs/w17-prove/` | Eval suites, the incident drill, the observability card |
-| `codebase/labs/w22-pairing/` | The pair-programming exercise (`flag_reg_e.py`) |
-| `codebase/notebooks/` | The per-week companion notebooks (W13–W17) |
+| `codebase/notebooks/` | The per-week companion notebooks (W13–W15) |
 | `codebase/docs/` | Walkthroughs, API reference, supplementary reads |
 | `codebase/evidence/` | Dated captures proving each component actually ran |
 | `.github/workflows/eval-gate.yml` | CI gate: smoke eval + tests + golden gate on every PR |
@@ -70,7 +64,6 @@ make golden                # the full 150-case golden gate (incl. adversarial), 
 make test                  # agent unit tests
 make up && make web        # Postgres + the Ops Console on :3100
 make agent                 # the triage pipeline on dispute 29 (mock brain)
-make mcp                   # W16 governed door: two-analyst RBAC, idempotency, audit
 make help                  # every target
 ```
 
@@ -81,15 +74,15 @@ PYTHONPATH=src python3 -m meridian_agent run --dispute 29 --mock
 PYTHONPATH=src python3 -m meridian_agent eval --suite smoke --disputes 1-20 --min-pass 0.9 --mock
 ```
 
-## Milestones → graded checklist → gate
+## Milestones → gate
 
-| Milestone | Week | Graded checklist | Gate |
-|---|---|---|---|
-| M0 charter | 13 | `curriculum/W13_Customer_Discovery_Scoping/post-class/` | human review |
-| M1 SoW + architecture | 14 | `curriculum/W14_SoW_Pricing_Architecture/post-class/` (+ the two .docx templates) | human review |
-| M2 agent in CI | 15 | `curriculum/W15_Building_Production_Agents/post-class/` | smoke eval ≥0.9, PR gate green |
-| M3 integrated + RBAC | 16 | `curriculum/W16_Integration_MCP_RBAC/post-class/` | two-analyst test PASS |
-| M4 prove + handover | 17 | `curriculum/W17_Evals_Observability_Handover/post-class/` | golden ≥0.95, zero ADV-* fails |
+| Milestone | Week | Gate |
+|---|---|---|
+| M0 charter | 13 | human review |
+| M1 SoW + architecture | 14 | human review |
+| M2 agent in CI | 15 | smoke eval ≥0.9, PR gate green |
+| M3 integrated + RBAC | 16 | two-analyst test PASS |
+| M4 prove + handover | 17 | golden ≥0.95, zero ADV-* fails |
 
 ## How work lands — one PR per milestone
 

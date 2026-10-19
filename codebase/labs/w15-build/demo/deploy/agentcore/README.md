@@ -108,8 +108,7 @@ agentcore destroy        # runtime + role + memory: gone
 ```
 
 The GenAI Observability dashboard link is printed by `agentcore deploy`
-(traces take ~10 min to appear on first launch). W17 picks this thread up:
-`codebase/labs/w17-prove/agentcore_observability.md`.
+(traces take ~10 min to appear on first launch).
 
 **Where the traces actually live.** Every span (the runtime invoke, memory
 `CreateEvent`/`ListEvents`, model calls) lands in the **`aws/spans`** log group —
